@@ -1,12 +1,9 @@
-
-import './App.css';
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <section className='text-red-400'>
-        <p> Welcome to intern build, let us get started, Innit</p>
-      </section>
+    <div>
+      <Navbar />
     </div>
   );
 }
