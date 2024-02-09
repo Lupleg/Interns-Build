@@ -1,14 +1,13 @@
+import React from 'react';
+import Solutions from './components/nav/Solutions';
 
-import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <section className='text-red-400'>
-        <p> Welcome to intern build, let us get started, Innit</p>
-      </section>
+    <div>
+      <Solutions/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
