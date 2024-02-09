@@ -8,7 +8,7 @@ const ContactUs = () => {
       <button
         onMouseOver={() => setIsOpen(true)}
         onMouseOut={() => setIsOpen(false)}
-        className="bg-blue-500 text-white font-semibold py-2 px-4 rounded"
+        className="font-semibold py-2 px-4 rounded"
       >
         Contact Us
       </button>
