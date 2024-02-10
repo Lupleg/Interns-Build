@@ -14,7 +14,7 @@ const Solutions = () => {
 
 
        return (
-              <div className={`absolute ${isHovered ? 'block' : 'hidden'} bg-white p-4 shadow-lg rounded-md`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+              <div className={`absolute ${isHovered ? 'block' : ''} bg-white p-4 shadow-lg rounded-md`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                      <div className='flex'>
                             <div className='w-1/2 pr-4'>
                                    <h2 className='text-lg font-semibold mb-2'>Industries</h2>
