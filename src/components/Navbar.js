@@ -1,7 +1,11 @@
 import React from "react";
+import { useState } from "react";
+import { Twirl as Hamburger } from "hamburger-react";
+import Button from "./Button";
 import ContactUs from "./ContactUs";
 
 const Navbar = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <div className="flex justify-between  w-4/5 md:w-11/12 lg:w-4/5 md:mx-auto mx-auto">
       <div className="flex gap-x-2 justify-center items-center ">
@@ -18,6 +22,14 @@ const Navbar = () => {
         <a>Pricing</a>
         <a>Resources</a>
         <ContactUs />
+      </div>
+      <div className="lg:hidden">
+        <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
+      </div>
+
+      <div className="hidden lg:block lg:flex lg:gap-x-8 lg:justify-center">
+        <a className="text-md my-auto font-medium">Sign In</a>
+        <Button />
       </div>
     </div>
   );
