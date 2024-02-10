@@ -4,7 +4,7 @@ const ContactUs = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative">
+    <li className="relative">
       <button
         onMouseOver={() => setIsOpen(true)}
         onMouseOut={() => setIsOpen(false)}
@@ -37,7 +37,7 @@ const ContactUs = () => {
           </div>
         </div>
       )}
-    </div>
+    </li>
   );
 };
 

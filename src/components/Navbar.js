@@ -16,13 +16,13 @@ const Navbar = () => {
         <p className="text-xl md:text-2xl lg:text-4xl font-bold">Front</p>
       </div>
 
-      <div className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
-        <a>Product</a>
-        <a>Solutions</a>
-        <a>Pricing</a>
-        <a>Resources</a>
+      <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
+        <li>Product</li>
+        <li>Solutions</li>
+        <li>Pricing</li>
+        <li>Resources</li>
         <ContactUs />
-      </div>
+      </ul>
       <div className="lg:hidden">
         <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
       </div>
