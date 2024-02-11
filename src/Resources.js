@@ -3,11 +3,8 @@ import React from "react";
 const Resources = () => {
   return (
     <div className="resources-card p-4 bg-white-100 rounded-md shadow-md md:mx-40 sm:mx-20 mx-10">
-      <div className="grid grid-cols-3 gap-4 mx-4">
-        {" "}
-        {/* three grid column */}
-        {/* left column */}
-        <div className="col-span-1 bg-white-100 p-4 text-left border-r border-grey">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
+        <div className="col-span-1 bg-white-100 p-4 text-left border-b md:border-b-0 md:border-r border-grey mb-4 md:mb-0">
           <h1 className="text-2xl font-bold mb-4">
             <span className="text-red-500">Explore</span>
           </h1>
@@ -39,8 +36,7 @@ const Resources = () => {
             </p>
           </div>
         </div>
-        {/* middle column */}
-        <div className="col-span-1 bg-white-100 p-4 text-left border-r border-grey">
+        <div className="col-span-1 bg-white-100 p-4 text-left border-b md:border-b-0 md:border-r border-grey mb-4 md:mb-0">
           <h1 className="text-2xl font-bold mb-4 ">
             <span className="text-red-500">Learn</span>
           </h1>
@@ -72,8 +68,7 @@ const Resources = () => {
             </p>
           </div>
         </div>
-        {/* right column */}
-        <div className="col-span-1 bg-white-100 p-4 text-left">
+        <div className="col-span-1 bg-white-100 p-4 text-left border-b md:border-b-0 md:border-r border-grey mb-4 md:mb-0">
           <h1 className="text-2xl font-bold mb-4">
             <span className="text-red-500">Connect</span>
           </h1>
