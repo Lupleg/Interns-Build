@@ -4,11 +4,11 @@ import Product from './components/Product';
 
 function App() {
   return (
-    <div className="App md:flex p-10 ">
+    <div className="App md:flex p-5   w-3/5 mx-auto">
       {/* here */}
       {/* <button className='border-2'>Click</button> */}
      
-        <div className=' md:border-r-2 ml-9 mb-10	md:w-2/6'>
+        <div className=' md:border-r-2 ml-4 mb-10	md:w-2/6'>
           <p className='font-bold	 text-red-700  text-sm'>WHAT IS FRONT?</p>
           <div className='md:grid md:grid-rows-2'>
           <Product heading="Product Overview" content="Learn how front helps build stronger customer relationship and operastion efficency"/>
@@ -19,9 +19,9 @@ function App() {
           
         </div>
         <div ></div>
-        <div className=' md:w-6/12 ml-9' >
+        <div className=' md:w-3/5 ml-9' >
           <p className='font-bold	 text-red-700 text-sm '>CAPABILITIES</p>
-          <div className='md:grid md:grid-cols-2'>
+          <div className='md:grid md:grid-cols-2 md:gap-x-7'>
           <Product heading="Collaboration" content="Work more efficiently with next-level team coordination"/>
           <Product heading="Workflow automation" content="Organise, route, ans resolve communication at scale"/>
           <Product heading="Analytics" content="Inform decisions with team performance, workflow, and customer insights"/>
