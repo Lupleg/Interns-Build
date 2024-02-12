@@ -11,7 +11,7 @@ const Contact = () => {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <p>Get in touch</p>
+          <p>GET IN TOUCH</p>
           <ul rows="2">
             <li>
               <button
