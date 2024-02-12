@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ContactUs = () => {
+const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Popup = () => {
     return (
@@ -38,4 +38,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;

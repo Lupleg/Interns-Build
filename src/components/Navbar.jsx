@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
 import Button from "./Button";
-import ContactUs from "./navbar_items/ContactUs";
+import Contact from "./nav/Contact";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
         <li>Solutions</li>
         <li>Pricing</li>
         <li>Resources</li>
-        <ContactUs />
+        <Contact />
       </ul>
       <div className="lg:hidden">
         <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
