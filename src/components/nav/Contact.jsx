@@ -11,7 +11,7 @@ const Contact = () => {
           aria-orientation="vertical"
           aria-labelledby="options-menu"
         >
-          <p>GET IN TOUCH</p>
+          <p className="font-medium text-pink-500">GET IN TOUCH</p>
           <ul rows="2">
             <li>
               <button
