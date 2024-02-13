@@ -15,7 +15,7 @@ const Solutions = () => {
 
        return (
          <div
-           className={`absolute w-3/4 ${isHovered ? "block" : " "} bg-white p-4 shadow-lg rounded-md`}
+           className={`absolute w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-4 shadow-lg rounded-md`}
            onMouseEnter={handleMouseEnter}
            onMouseLeave={handleMouseLeave}
          >
