@@ -20,8 +20,10 @@ const Contact = () => {
               >
                 <div>
                   <p>
-                    <span className="text-left font-bold">Talk to Sales</span>
-                    <div className="mt-1">
+                    <span className="text-left font-semibold rounded">
+                      Talk to Sales
+                    </span>
+                    <div className="mt-1 font-normal">
                       Got a specific question for our Sales team? Get an answer
                       here
                     </div>
@@ -36,10 +38,10 @@ const Contact = () => {
               >
                 <div>
                   <p>
-                    <span className="text-left font-bold text-left">
+                    <span className="text-left font-semibold text-left rounded">
                       Email us for support
                     </span>
-                    <div className="mt-1">
+                    <div className="mt-1 font-normal">
                       Need help using Front? Our team of product experts is here
                       to troubleshoot
                     </div>
