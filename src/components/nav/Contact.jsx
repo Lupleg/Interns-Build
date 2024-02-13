@@ -4,7 +4,7 @@ const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Menu = () => {
     return (
-      <div className="absolute top-10 left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+      <div className="absolute top-10 left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8">
         <div
           className="py-1"
           role="menu"
@@ -15,13 +15,13 @@ const Contact = () => {
           <ul rows="2">
             <li>
               <button
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 my-4 text-left"
                 role="menuitem"
               >
                 <div>
                   <p>
-                    <span>Talk to Sales</span>
-                    <div>
+                    <span className="text-left font-bold">Talk to Sales</span>
+                    <div className="mt-1">
                       Got a specific question for our Sales team? Get an answer here
                     </div>
                   </p>
@@ -30,13 +30,13 @@ const Contact = () => {
             </li>
             <li>
               <button
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 my-4 text-left"
                 role="menuitem"
               >
                 <div>
                   <p>
-                    <span>Email us for support</span>
-                    <div>
+                    <span className="text-left font-bold text-left">Email us for support</span>
+                    <div className="mt-1">
                       Need help using Front? Our team of product experts is here to troubleshoot
                     </div>
                   </p>
