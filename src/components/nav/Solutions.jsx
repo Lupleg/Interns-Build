@@ -12,7 +12,10 @@ const Solutions = () => {
   };
 
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       Solutions
       <div
         className={`absolute top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-4 shadow-lg rounded-md`}
