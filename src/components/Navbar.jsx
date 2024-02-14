@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
 import Button from "./Button";
 import Contact from "./nav/Contact";
+import Solutions from "./nav/Solutions";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
 const Navbar = () => {
@@ -28,7 +29,7 @@ const Navbar = () => {
 
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
         <li>Product</li>
-        <li>Solutions</li>
+        <Solutions/>
         <li>Pricing</li>
         <li>Resources</li>
         <Contact />
