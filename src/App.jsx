@@ -1,6 +1,7 @@
 import Feature from "./components/features/Feature";
 import Header from "./components/features/Header";
 import Navbar from "./components/Navbar";
+import NotAnd from "./components/features/NotAnd";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Header />
       <Feature />
+      <NotAnd/>
     </div>
   );
 }
