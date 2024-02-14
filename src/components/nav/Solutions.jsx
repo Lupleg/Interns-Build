@@ -18,7 +18,7 @@ const Solutions = () => {
     >
       Solutions
       <div
-        className={`absolute top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-4 shadow-lg rounded-md`}
+        className={`absolute top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-2 shadow-lg rounded-md`}
       >
         <div className='flex pt-5'>
           <div className='w-1/2 pr-4 border-r border-gray-300'>
@@ -27,7 +27,7 @@ const Solutions = () => {
             </h2>
             <div className='flex flex-wrap'>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 pb-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Technology</a>
                   </h2>
@@ -38,7 +38,7 @@ const Solutions = () => {
               </div>
 
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 pb-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Financial Services</a>
                   </h2>
@@ -50,7 +50,7 @@ const Solutions = () => {
               </div>
 
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 pb-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Logistics</a>
                   </h2>
@@ -61,7 +61,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 pb-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Manufacturing</a>
                   </h2>
@@ -72,7 +72,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 pb-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Professional services</a>
                   </h2>
@@ -82,7 +82,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 pb-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Travel</a>
                   </h2>
@@ -101,7 +101,7 @@ const Solutions = () => {
             </h2>
             <div className='flex flex-wrap'>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Customer Services and Support</a>
                   </h2>
@@ -112,7 +112,7 @@ const Solutions = () => {
               </div>
 
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Operations</a>
                   </h2>
@@ -122,7 +122,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Inbound Sales</a>
                   </h2>
@@ -132,7 +132,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Account Management</a>
                   </h2>
@@ -142,7 +142,7 @@ const Solutions = () => {
                 </div>
               </div>
               <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
-                <div className='hover:bg-gray-100 p-4 bg-white rounded-md'>
+                <div className='hover:bg-gray-100 p-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Success</a>
                   </h2>
