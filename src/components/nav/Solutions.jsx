@@ -18,7 +18,7 @@ const Solutions = () => {
     >
       Solutions
       <div
-        className={`absolute top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-2 shadow-lg rounded-md`}
+        className={`mt-7 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-2 shadow-lg rounded-md`}
       >
         <div className='flex pt-5'>
           <div className='w-1/2 pr-4 border-r border-gray-300'>
