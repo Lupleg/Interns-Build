@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
 import Button from "./Button";
-import Contact from "./Nav/Contact";
+import Contact from "./nav/Contact";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import Products from "./Nav/Products";
+import Products from "./nav/Products";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
