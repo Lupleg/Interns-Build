@@ -13,7 +13,7 @@ const Contact = () => {
         >
           <ul rows="3">
             <li>
-              <div className="my-4 px-4 py-2 text-left text-xs text-pink-500">
+              <div className="my-4 px-4 py-2 text-left text-xs text-red-600">
                 <div>
                   <p>
                     <span className="text-left font-semibold rounded">
