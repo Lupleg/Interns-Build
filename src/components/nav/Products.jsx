@@ -51,7 +51,7 @@ function Products() {
         onMouseOver={() => setIsOpen(true)}
         onMouseOut={() => setIsOpen(false)}
       >
-        <span className="font-semibold py-2 px-4 rounded">Products</span>
+        <span className="font-semibold py-2 px-4 rounded hover:border-b-2 hover:border-black">Products</span>
         
         {isOpen && ProductItem()}
       </button>
