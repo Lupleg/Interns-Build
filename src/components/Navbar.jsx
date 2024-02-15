@@ -6,6 +6,7 @@ import Contact from "./nav/Contact";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
+import Resources from "./nav/Resources";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
           <Products />
           <Solutions />
           <li>Pricing</li>
-          <li>Resources</li>
+          <Resources />
           <Contact />
         </ul>
 
