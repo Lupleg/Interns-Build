@@ -4,7 +4,7 @@ const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Menu = () => {
     return (
-      <div className="absolute top-6 left-0 mt-0 w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8">
+      <div className="absolute top-9 left-0 mt-0 w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8">
         <div
           className="py-1"
           role="menu"
@@ -13,7 +13,7 @@ const Contact = () => {
         >
           <ul rows="3">
             <li>
-              <div className="my-4 px-4 py-2 text-left text-xs text-red-600">
+              <div className="my-2 px-4 py-2 text-left text-sm text-red-600">
                 <div>
                   <p>
                     <span className="text-left font-semibold rounded">
@@ -25,7 +25,7 @@ const Contact = () => {
             </li>
             <li>
               <button
-                className="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:rounded my-4"
+                className="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:rounded my-2"
                 role="menuitem"
               >
                 <div>
