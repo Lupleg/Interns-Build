@@ -15,8 +15,8 @@ const Solutions = () => {
     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="">
       Solutions
       <div
-        className={`pt-6
-        absolute top-full lg:top-12 px-0 py-2 left-1/2 transform -translate-x-1/2 ${isHovered ? "block" : "hidden"} w-3/4 bg-white shadow-lg rounded-md`}
+        className={`pt-2
+        absolute  md:top-16 px-0 py-2 left-1/2 transform -translate-x-1/2 ${isHovered ? "block" : "hidden"} w-3/4 bg-white shadow-lg rounded-md`}
       >
         <div className='flex pt-5'>
           <div className='w-1/2 pr-4 border-r border-gray-300'>
