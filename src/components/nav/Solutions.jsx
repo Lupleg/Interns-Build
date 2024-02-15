@@ -12,13 +12,11 @@ const Solutions = () => {
   };
 
   return (
-    <div
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="">
       Solutions
       <div
-        className={`mt-7 absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 ${isHovered ? "block" : "hidden"} bg-white p-2 shadow-lg rounded-md`}
+        className={`pt-6
+        absolute top-full lg:top-12 px-0 py-2 left-1/2 transform -translate-x-1/2 ${isHovered ? "block" : "hidden"} w-3/4 bg-white shadow-lg rounded-md`}
       >
         <div className='flex pt-5'>
           <div className='w-1/2 pr-4 border-r border-gray-300'>
