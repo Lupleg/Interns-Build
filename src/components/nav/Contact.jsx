@@ -4,7 +4,7 @@ const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Menu = () => {
     return (
-      <div className="absolute top-9 left-0 mt-0 w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8">
+      <div className="absolute top-7 left-0 mt-0 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8 lg:w-80 md:w-60 sm:w-40 xs:w-20">
         <div
           className="py-1"
           role="menu"
@@ -72,12 +72,6 @@ const Contact = () => {
         onMouseOut={() => setIsOpen(false)}
       >
         <span className="font-semibold py-2 px-4 rounded">Contact Us</span>
-        {/* <div> */}
-        {/*   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="24"> */}
-        {/*     <path d="M18.872 15.136L12 9l-6.872 6.136" stroke="#001B38" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> */}
-        {/*     </path> */}
-        {/*   </svg> */}
-        {/* </div> */}
         {isOpen && Menu()}
       </button>
     </li>
