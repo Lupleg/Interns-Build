@@ -12,19 +12,23 @@ const Solutions = () => {
   };
 
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="">
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className=''
+    >
       Solutions
       <div
         className={`pt-2
         absolute  md:top-16 px-0 py-2 left-1/2 transform -translate-x-1/2 ${isHovered ? "block" : "hidden"} w-3/4 bg-white shadow-lg rounded-md`}
       >
-        <div className='flex pt-5'>
-          <div className='w-1/2 pr-4 border-r border-gray-300'>
+        <div className='pt-5 flex flex-col lg:flex-row'>
+          <div className='w-full lg:w-1/2 border-r border-gray-300'>
             <h2 className='pl-5 text-lg text-red-600 font-semibold mb-2'>
               Industries
             </h2>
             <div className='flex flex-wrap'>
-              <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
+              <div className='p-2 md:w-1/2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Technology</a>
@@ -35,7 +39,7 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
+              <div className='md:w-1/2 p-2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Financial Services</a>
@@ -47,7 +51,7 @@ const Solutions = () => {
                 </div>
               </div>
 
-              <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
+              <div className='md:w-1/2 p-2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Logistics</a>
@@ -58,7 +62,7 @@ const Solutions = () => {
                   </p>
                 </div>
               </div>
-              <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
+              <div className='md:w-1/2 p-2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Manufacturing</a>
@@ -69,7 +73,7 @@ const Solutions = () => {
                   </p>
                 </div>
               </div>
-              <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
+              <div className='md:w-1/2 p-2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Professional services</a>
@@ -79,7 +83,7 @@ const Solutions = () => {
                   </p>
                 </div>
               </div>
-              <div className='w-full sm:w-1/2 md:w-1/2 p-2'>
+              <div className='md:w-1/2 p-2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
                   <h2 className='text-base font-semibold'>
                     <a href='#'>Travel</a>
@@ -93,7 +97,7 @@ const Solutions = () => {
             </div>
           </div>
 
-          <div className='w-1/2 pl-4'>
+          <div className="w-full lg:w-1/2">
             <h2 className='pl-5 text-lg text-red-600 font-semibold mb-2'>
               Teams
             </h2>
