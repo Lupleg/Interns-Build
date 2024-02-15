@@ -19,8 +19,8 @@ function Helpdesk() {
   }, []);
 
   return (
-    <div className="lg:px-28 md:px-24 sm:px-20 px-8">
-      <section className="pt-24">
+    <div className="lg:px-28 md:px-24 sm:px-20 px-8 py-12 lg:py-16">
+      <section className="">
         <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl text-center lg:text-5xl mb-10">
           The best from email and help desks
         </h2>
