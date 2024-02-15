@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../Button'
+import React from "react";
+import Button from "../Button";
 
 const Feature = () => {
   return (
@@ -55,7 +55,7 @@ const Feature = () => {
 
         </div>
     </div>
-  )
-}
+  );
+};
 
 export default Feature
