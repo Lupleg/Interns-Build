@@ -31,8 +31,6 @@ const Navbar = () => {
 
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
         <Products/>
-        <li>Solutions</li>
-        <li>Product</li>
         <Solutions/>
         <li>Pricing</li>
         <li>Resources</li>
