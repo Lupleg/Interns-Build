@@ -70,7 +70,7 @@ function Resources() {
   const Column = ({ col, rb, pars }) => {
     return (
       <div
-        className={`flex flex-col space-y-2 px-4 md:w-80 bg-white ${rb ? "border-r border-gray-200 pr-4" : ""}`}
+        className={`flex flex-col space-y-1 px-4 md:w-80 bg-white ${rb ? "border-r border-gray-200 pr-4" : ""}`}
       >
         <p className="p-2 font-bold text-xs text-pink-500">{col}</p>
         <ul>
@@ -78,7 +78,7 @@ function Resources() {
             <li>
               <button className="flex flex-col p-2 hover:bg-gray-100 hover:rounded">
                 <div>
-                  <p className="text-left text-slate-700 my-3">
+                  <p className="text-left text-slate-700 my-2">
                     <h2 className="font-bold text-base text-left">
                       {par.span}
                     </h2>
@@ -97,7 +97,7 @@ function Resources() {
 
   const Menu = () => {
     return (
-      <div className="text-left md:flex p-5 w-4/5 mx-auto absolute top-16 md:right-20 bg-white shadow-md rounded-lg">
+      <div className="text-left md:flex p-5 w-4/5 mx-auto absolute top-24 md:right-20 bg-white shadow-md rounded-lg">
         <Column col={menu.col1.title} rb={true} pars={menu.col1.pars} />
         <Column col={menu.col2.title} rb={true} pars={menu.col2.pars} />
         <Column col={menu.col3.title} rb={false} pars={menu.col3.pars} />
