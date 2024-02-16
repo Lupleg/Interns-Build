@@ -59,7 +59,7 @@ const Navbar = () => {
               className='flex justify-between border-b-2 pb-3'
               onClick={toggleDrop}
             >
-              <Solutions/>
+              <Solutions />
               {!dropOpen && <RiArrowDropDownLine size={30} />}{" "}
               {dropOpen && <RiArrowDropUpLine size={30} />}
             </button>

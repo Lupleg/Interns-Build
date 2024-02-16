@@ -20,7 +20,7 @@ const Solutions = () => {
       Solutions
       <div
         className={`pt-2
-        absolute  md:top-16 px-0 py-2 left-1/2 transform -translate-x-1/2 ${isHovered ? "block" : "hidden"} w-3/4 bg-white shadow-lg rounded-md`}
+        absolute md:top-16 px-0 py-2 left-1/2 transform -translate-x-1/2 ${isHovered ? "block" : "hidden"} w-3/4 bg-white shadow-lg rounded-md`}
       >
         <div className='pt-5 flex flex-col lg:flex-row'>
           <div className='w-full lg:w-1/2 border-r border-gray-300'>
