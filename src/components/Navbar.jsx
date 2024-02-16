@@ -44,7 +44,7 @@ const Navbar = () => {
           <p className="text-xl md:text-2xl lg:text-4xl font-bold">Front</p>
         </div>
 
-        <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden">
+        <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
           <Products />
           <Solutions />
           <li>Pricing</li>
@@ -56,13 +56,13 @@ const Navbar = () => {
           <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
         </div>
 
-        <div className="hidden lg:block lg:gap-x-8 lg:justify-center">
+        <div className="hidden lg:block lg:flex lg:gap-x-8 lg:justify-center">
           <a className="text-md my-auto font-medium">Sign In</a>
           <Button />
         </div>
       </div>
 
-      <div className="flex lg:hidden w-4/5 mx-auto mt-4">
+      <div className="flex lg:hidden block w-4/5 mx-auto mt-4">
         {isOpen && (
           <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
             <button
