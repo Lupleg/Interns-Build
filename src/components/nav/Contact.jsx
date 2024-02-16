@@ -13,7 +13,7 @@ const Contact = () => {
         >
           <ul rows="3">
             <li>
-              <div className="my-2 px-4 py-2 text-left text-sm text-red-600">
+              <div className="my-2 px-4 py-2 text-left text-sm text-pink-500">
                 <div>
                   <p>
                     <span className="text-left font-semibold rounded">
@@ -25,7 +25,7 @@ const Contact = () => {
             </li>
             <li>
               <button
-                className="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:rounded my-2"
+                className="px-4 py-2 text-left text-sm text-slate-700 hover:bg-gray-100 hover:rounded my-2"
                 role="menuitem"
               >
                 <div>
