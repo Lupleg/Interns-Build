@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import NotAnd from "./components/features/NotAnd";
 import Helpdesk from "./components/features/Helpdesk";
 import ProductOverview from "./components/productOverview/ProductOverview";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
@@ -14,6 +15,11 @@ function App() {
       <NotAnd />
       <Helpdesk />
       <ProductOverview/>
+      
+     
+          {/* <Route path="product" element={<ProductOverview/>}></Route> */}
+        
+      
     </div>
   );
 }

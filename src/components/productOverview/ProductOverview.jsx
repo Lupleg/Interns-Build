@@ -1,8 +1,11 @@
 import React from 'react'
+import IntegrateApps from './IntegrateApps'
 
 const ProductOverview = () => {
   return (
-    <div>ProductOverview</div>
+    <div>
+        <IntegrateApps/>
+    </div>
   )
 }
 
