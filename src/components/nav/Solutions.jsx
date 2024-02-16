@@ -75,7 +75,7 @@ const Solutions = () => {
               </div>
               <div className='md:w-1/2 p-2'>
                 <div className='hover:bg-gray-100 p-4 pb-3 bg-white rounded-md'>
-                  <h2 className='text-base font-semibold'>
+                  <h2 className='text-base font-bold'>
                     <a href='#'>Professional services</a>
                   </h2>
                   <p className='text-gray-600 text-sm'>
