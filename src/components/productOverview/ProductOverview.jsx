@@ -1,8 +1,11 @@
 import React from 'react'
+import ExploreCapabilities from './ExploreCapabilities'
 
 const ProductOverview = () => {
   return (
-    <div>ProductOverview</div>
+    <div>
+      <ExploreCapabilities/>
+    </div>
   )
 }
 
