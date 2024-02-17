@@ -1,6 +1,6 @@
 
 // check here @HillaryNyakundi
-export default function Component() {
+export default function Explore() {
     return (
       <div className="bg-[#F9FAFB] py-16 bg-[#F9FAFB]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
