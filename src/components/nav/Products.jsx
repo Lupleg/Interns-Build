@@ -14,8 +14,9 @@ function Products() {
             <p className='font-bold	 text-pink-500  md:text-sm text-xs'>WHAT IS FRONT?</p>
             <div className='md:grid md:grid-rows-2 '>
             
+            <Link to="product">
               <Productprops heading="Product Overview" content="Learn how front helps build stronger customer relationship and operastion efficency"/>
-            
+            </Link>
             
             <Productprops heading="Front in 2-minute" content="See how front keeps all responses fast,accurate,and human"/>
             </div>

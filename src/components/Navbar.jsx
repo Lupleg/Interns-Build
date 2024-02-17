@@ -61,7 +61,7 @@ const Navbar = () => {
 
       <div className="hidden lg:block lg:flex lg:gap-x-8 lg:justify-center">
         <a className="text-md my-auto font-medium">Sign In</a>
-        <Button/>
+        <Button text="Get Started" width="32"/>
       </div>
     </div>
 
@@ -77,7 +77,7 @@ const Navbar = () => {
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Sign In</button>
 
-          <div className="mx-auto">  <Button/></div>
+          <div className="">  <Button text="Get Started" width="80"/></div>
           
         </div>
       )}

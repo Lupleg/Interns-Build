@@ -3,13 +3,13 @@ import Button from '../Button'
 
 const IntegrateApps = () => {
   return (
-    <div className='w-full sm:w-2/3 lg:w-4/5  mx-auto relative grid grid-rows-3'> 
+    <div className='w-full sm:w-2/3 lg:w-4/5  mx-auto relative grid grid-rows-3 mt-10'> 
 
         
         <div className='flex flex-col gap-y-4 md:gap-y-8 text-center py-20 w-4/5 mx-auto'>
             <p className='font-semibold text-xl md:text-3xl'>Integrate your favorite apps</p>
             <p >Sync customer data, manage tasks, and connect every message with Front</p>
-            <Button/>
+            <Button text="Explore integrations" width="56"/>
         </div>
 
         <div className='sm:w-4/5 mx-auto'>
