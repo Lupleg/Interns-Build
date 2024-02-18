@@ -3,8 +3,8 @@ import Header from "./components/features/Header";
 import Navbar from "./components/Navbar";
 import NotAnd from "./components/features/NotAnd";
 import Helpdesk from "./components/features/Helpdesk";
-import ProductOverview from "./components/productOverview/ProductOverview";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+
+import Footer from "./components/features/Footer";
 
 function App() {
   return (
@@ -14,7 +14,8 @@ function App() {
       <Feature />
       <NotAnd />
       <Helpdesk />
-      <ProductOverview/>
+    
+      <Footer/>
       
      
           {/* <Route path="product" element={<ProductOverview/>}></Route> */}
