@@ -1,5 +1,6 @@
 import Productprops from "./Productprops";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Products() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,12 @@ function Products() {
             WHAT IS FRONT?
           </p>
           <div className='md:grid md:grid-rows-2 '>
-            <Productprops
-              heading='Product Overview'
-              content='Learn how front helps build stronger customer relationship and operastion efficency'
-            />
+            <Link to="product">
+              <Productprops
+                heading='Product Overview'
+                content='Learn how front helps build stronger customer relationship and operastion efficency'
+              />
+            </Link>
             <Productprops
               heading='Front in 2-minute'
               content='See how front keeps all responses fast,accurate,and human'

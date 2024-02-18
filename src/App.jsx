@@ -1,5 +1,4 @@
 
-import Navbar from "./components/Navbar";
 import ProductOverview from "./components/productOverview/ProductOverview";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import LandingPage from "./components/LandingPage";

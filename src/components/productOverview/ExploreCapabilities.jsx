@@ -1,80 +1,117 @@
 import React from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 const ExploreCapabilities = () => {
   return (
-    <div className='bg-blue-950 text-white pl-16'>
-      <div className='pt-10'>
-        <h1 className='text-5xl pb-5'>Explore all of Front's capabilities</h1>
-        <p className='pt-5'>Learn more about our product</p>
-        <a href=''>
-          <FaArrowRightLong className=' ' />
-        </a>
-
-        <div className='grid grid-cols-2'>
-          <div className='col-span-1 flex flex-col mt-12 mb-14'>
-            <div className='pb-8'>
-              <h1 className='text-xl'>Collaboration </h1>
+    <div className='py-16 bg-gradient-to-bl from-sky-950 to-blue-900'>
+      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+        <div className='text-center'>
+          <h2 className='text-3xl font-extrabold tracking-tight text-white sm:text-4xl'>
+            Explore all of Front's capabilities
+          </h2>
+          <p className='mt-4 max-w-2xl text-xl text-white lg:mx-auto'>
+            Learn more about our product
+            <span className='inline-block pl-2 px-2'>
               <a href=''>
-                <span>
-                  <FaArrowRightLong />
-                </span>
+                <FaArrowRight />
               </a>
-              <p>Work more efficiently with next-level team coordination</p>
+            </span>
+          </p>
+        </div>
+        <div className='mt-10'>
+          <dl className='space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10'>
+            <div className='relative'>
+              <dt>
+                <p className='ml-16 text-xl font-medium leading-6 text-white'>
+                  Collaboration
+                  <span className='inline-block pl-2 px-2'>
+                    <a href=''>
+                      <FaArrowRight />
+                    </a>
+                  </span>
+                </p>
+              </dt>
+              <dd className='mt-2 ml-16 text-base text-white'>
+                Work more efficiently with next-level team coordination
+              </dd>
             </div>
-
-            <div className='pb-8'>
-              <h1 className='text-xl'>Omnichannel inbox</h1>
-              <a href='' className='text-xl'>
-                <FaArrowRightLong />
-              </a>
-              <p>Manage shared inboxes for all channels in one place</p>
+            <div className='relative'>
+              <dt>
+                <p className='ml-16 text-xl font-medium leading-6 text-white'>
+                  Workflow automation
+                  <span className='inline-block pl-2 px-2'>
+                    <a href=''>
+                      <FaArrowRight />
+                    </a>
+                  </span>
+                </p>
+              </dt>
+              <dd className='mt-2 ml-16 text-base text-white'>
+                Organize, route, and resolve conversations at scale
+              </dd>
             </div>
-
-            <div className='pb-8'>
-              <h1 className='text-xl'>Knowledge Base</h1>
-              <a href='' className='text-xl'>
-                <FaArrowRightLong />
-              </a>
-              <p>Resolve customer inquiries faster with smart deflection</p>
+            <div className='relative'>
+              <dt>
+                <p className='ml-16 text-xl font-medium leading-6 text-white'>
+                  Omnichannel inbox
+                  <span className='inline-block pl-2 px-2'>
+                    <a href=''>
+                      <FaArrowRight />
+                    </a>
+                  </span>
+                </p>
+              </dt>
+              <dd className='mt-2 ml-16 text-base text-white'>
+                Manage shared inboxes for all channels in one place
+              </dd>
             </div>
-            <div className='pb-8'>
-              <h1 className='text-xl'>Integrations & API</h1>
-              <a href='' className='text-xl'>
-                <FaArrowRightLong />
-              </a>
-              <p>
-                Seamlessly connect other systems to sync data, context and
-                channels
-              </p>
-            </div>
-          </div>
-          <div className='col-span-1 flex flex-col mt-14 mb-14'>
-            <div className='pb-8'>
-              <h1 className='text-xl'>Workflow automation</h1>
-              <a href='' className='text-xl'>
-                <FaArrowRightLong />
-              </a>
-              <p>Organize, route and resolve conversations at scale</p>
-            </div>
-            <div className='pb-8'>
-              <h1 className='text-xl'>Analytics</h1>
-              <a href='' className='text-xl'>
-                <FaArrowRightLong />
-              </a>
-              <p>
-                Inform decisions with team workflows, insights and team
+            <div className='relative'>
+              <dt>
+                <p className='ml-16 text-xl font-medium leading-6 text-white'>
+                  Analytics
+                  <span className='inline-block pl-2 px-2'>
+                    <a href=''>
+                      <FaArrowRight />
+                    </a>
+                  </span>
+                </p>
+              </dt>
+              <dd className='mt-2 ml-16 text-base text-white'>
+                Inform decisions with team workflows, insights, and team
                 performance
-              </p>
+              </dd>
             </div>
-            <div className='pb-8'>
-              <h1 className='text-xl'>Live chat</h1>
-              <a href='' className='text-xl'>
-                <FaArrowRightLong />
-              </a>
-              <p>Support customers on your website or app in real time</p>
+            <div className='relative'>
+              <dt>
+                <p className='ml-16 text-xl font-medium leading-6 text-white'>
+                  Knowledge Base
+                  <span className='inline-block pl-2 px-2'>
+                    <a href=''>
+                      <FaArrowRight />
+                    </a>
+                  </span>
+                </p>
+              </dt>
+              <dd className='mt-2 ml-16 text-base text-white'>
+                Resolve customer inquiries faster with smart deflection
+              </dd>
             </div>
-          </div>
+            <div className='relative'>
+              <dt>
+                <p className='ml-16 text-xl font-medium leading-6 text-white'>
+                  Live chat
+                  <span className='inline-block pl-2 px-2'>
+                    <a href=''>
+                      <FaArrowRight />
+                    </a>
+                  </span>
+                </p>
+              </dt>
+              <dd className='mt-2 ml-16 text-base text-white'>
+                Support customers on your website or app in real time
+              </dd>
+            </div>
+          </dl>
         </div>
       </div>
     </div>
