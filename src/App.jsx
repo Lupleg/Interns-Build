@@ -7,20 +7,13 @@ import LandingPage from "./components/LandingPage";
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-     
       
-
       <BrowserRouter>
         <Routes>
            <Route path="/" element={<LandingPage/>}/>
            <Route path="product" element={<ProductOverview/>} />
         </Routes>
-      </BrowserRouter>
-      
-     
-          {/* <Route path="product" element={<ProductOverview/>}></Route> */}
-        
+      </BrowserRouter>    
       
     </div>
   );
