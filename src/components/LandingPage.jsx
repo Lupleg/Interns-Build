@@ -4,6 +4,7 @@ import Feature from './features/Feature';
 import NotAnd from './features/NotAnd';
 import Helpdesk from './features/Helpdesk';
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,7 @@ const LandingPage = () => {
         <Feature />
         <NotAnd />
         <Helpdesk />
+        <Footer/>
     </div>
   )
 }
