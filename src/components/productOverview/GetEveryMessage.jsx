@@ -1,6 +1,6 @@
 import React from "react";
 
-const Raymond = () => {
+const GetEveryMessage = () => {
   const list_items = [
     {
       p: "Centralize your channels",
@@ -21,29 +21,29 @@ const Raymond = () => {
   ];
   return (
     <div>
-      <div className="text-base text-[rgb(0,27,56)] font-sans leading-normal box-border border border-gray-200 grid grid-cols-12 gap-5">
-        <div className="row-start-1 text-center max-w-[58rem] mx-auto flex flex-col gap-8 mb-16 col-start-3 col-end-10">
-          <h2 className="m-0 font-semibold tracking-tighter text-2xl leading-9">
+      <div className="">
+        <div className="">
+          <h2 className="">
             Get every message into the right hands without manual work
           </h2>
         </div>
-        <div className="rounded-lg overflow-hidden col-start-7 col-end-13 self-start mb-0">
+        <div className="">
           <video
             loop=""
             autoplay=""
             playsinline=""
-            className="block align-middle max-w-full h-auto w-full"
+            className=""
             muted=""
           >
             <source src="https://front.com/assets/features/centralize-animated.mp4" />
           </video>
         </div>
-        <div className="col-start-1 col-end-6">
-          <ol className="m-0 p-0 list-none flex flex-col gap-8">
+        <div className="">
+          <ol className="">
             {list_items.map((item, index) => (
               <li
                 data-expanded={index === 0 ? "true" : "false"}
-                className="pl-3 border-l border-transparent"
+                className=""
               >
                 <p>{item.p}</p>
                 <div>{item.div}</div>
@@ -56,4 +56,4 @@ const Raymond = () => {
   );
 };
 
-export default Raymond;
+export default GetEveryMessage;
