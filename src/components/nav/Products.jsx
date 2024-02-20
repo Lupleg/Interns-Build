@@ -5,7 +5,7 @@ function Products() {
   const [isOpen, setIsOpen] = useState(false);
   const ProductItem=()=>{
     return (
-      <div className="App md:flex p-5   w-4/5 mx-auto absolute top-16 left-10 bg-white border-2 border-grey-50 rounded-lg ">
+      <div className="App md:flex p-5   w-4/5 mx-auto absolute top-16 left-10 bg-white shadow-md rounded-lg ">
         {/* here */}
         {/* <button className='border-2'>Click</button> */}
        
