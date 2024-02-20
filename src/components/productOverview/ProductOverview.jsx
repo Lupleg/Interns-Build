@@ -6,6 +6,7 @@ import Slider from "./Slider";
 import Informative from "./Informative";
 import CardCrousel from "./CardCrousel";
 import Footer from '../Footer';
+import ProductHeader from './ProductHeader';
 
 
 
@@ -13,6 +14,7 @@ const productOverview = () => {
   return (
     <div>
       <Navbar/>
+      <ProductHeader/>
       <IntegratedApps/>
       <ExploreCapabilities/>
       <Informative text="In comes Front. Wow every customer with fast, accurate, and human responses."/>

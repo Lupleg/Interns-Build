@@ -1,6 +1,6 @@
 import React from "react";
 import PO_props from "./PO_props";
-// import Button from "./components/Button";
+import Button from "../Button"
 const ProductHeader = () => {
   return (
     <div className="">
@@ -15,7 +15,8 @@ const ProductHeader = () => {
                 Front is a new way to route, respond to, and measure all your
                 customer conversations
               </p>
-              {/* <Button /> */}
+              
+              <Button text="Get Started" width="32"/>
               
 
             </div>
@@ -27,7 +28,7 @@ const ProductHeader = () => {
       </div>
 
       <div className="text-center">
-        <h1 className="text-2xl font-bold text-black-500 p-12">
+        <h1 className="text-4xl font-bold text-black-500 p-12">
           Does this sound familiar?
         </h1>
         <div className="p-10 md:grid grid-cols-2 gap-10 md:m-10 lg:grid-cols-4">
