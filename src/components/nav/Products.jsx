@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+
 import Productprops from './Productprops';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Products() {
   const [isOpen, setIsOpen] = useState(false);
