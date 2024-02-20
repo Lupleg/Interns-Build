@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 import { Twirl as Hamburger } from "hamburger-react";
 import Button from "./Button";
-import Contact from "./Nav/Contact";
+import Contact from "./nav/Contact";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import Products from "./Nav/Products";
+import Products from "./nav/Products";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -52,7 +52,7 @@ const Navbar = () => {
       {isOpen &&(
         <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
 
-          <button className="flex  justify-between border-b-2 pb-3" onClick={toggleDrop}> Products{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> } </button>
+          <button className="flex  justify-between border-b-2 pb-3" onClick={toggleDrop}> <Products/>{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> } </button>
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleDrop}>Solutions{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleDrop}>Resources{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Pricing</button>
