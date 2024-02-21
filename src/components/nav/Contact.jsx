@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,6 +48,7 @@ const Contact = () => {
                 role="menuitem"
               >
                 <div>
+                  <Link to="contact">
                   <p>
                     <span className="text-left font-semibold rounded">
                       Email us for support
@@ -56,6 +58,7 @@ const Contact = () => {
                       to troubleshoot
                     </div>
                   </p>
+                  </Link>
                 </div>
               </button>
             </li>

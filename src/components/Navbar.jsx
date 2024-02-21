@@ -36,7 +36,7 @@ const Navbar = () => {
     setContactsOpen(!contactsOpen);
   };
   return (
-    <div>
+    <div className="sticky top-0 bg-white z-50">
     <div className="flex justify-between  w-4/5 md:w-11/12 lg:w-4/5 md:mx-auto mx-auto">
       <div className="flex gap-x-2 justify-center items-center ">
         <img
