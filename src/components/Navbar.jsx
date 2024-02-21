@@ -7,6 +7,7 @@ import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
         <Products/>
         <Solutions/>
-        <li>Pricing</li>
+        <Link to="pricing">Pricing</Link>
         <Resources/>
         <Contact />
       </ul>
@@ -61,7 +62,7 @@ const Navbar = () => {
 
       <div className="hidden lg:block lg:flex lg:gap-x-8 lg:justify-center">
         <a className="text-md my-auto font-medium">Sign In</a>
-        <Button/>
+        <Button text="Get Started" width="32"/>
       </div>
     </div>
 
@@ -77,7 +78,7 @@ const Navbar = () => {
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Sign In</button>
 
-          <div className="mx-auto">  <Button/></div>
+          <div className="">  <Button text="Get Started" width="80"/></div>
           
         </div>
       )}

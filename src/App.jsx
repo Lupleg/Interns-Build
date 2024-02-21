@@ -3,8 +3,8 @@ import Header from "./components/features/Header";
 import Navbar from "./components/Navbar";
 import NotAnd from "./components/features/NotAnd";
 import Helpdesk from "./components/features/Helpdesk";
-import Slider from "./components/features/Slider";
-import Footer from "./components/features/Footer";
+
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,10 +12,8 @@ function App() {
       <Navbar />
       <Header />
       <Feature />
-      <Slider />
       <NotAnd />
       <Helpdesk />
-
       <Footer />
 
       {/* <Route path="product" element={<ProductOverview/>}></Route> */}
