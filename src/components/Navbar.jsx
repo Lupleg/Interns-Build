@@ -4,7 +4,10 @@ import { Twirl as Hamburger } from "hamburger-react";
 import Button from "./Button";
 import Contact from "./nav/Contact";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
+import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
+import Resources from "./nav/Resources";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -13,9 +16,24 @@ const Navbar = () => {
     setOpen(!isOpen);
   };
 
-  const [dropOpen, setDropOpen]= useState(false);
-  const toggleDrop = () => {
-    setDropOpen(!dropOpen);
+  const [productsOpen, setProductsOpen]= useState(false);
+  const toggleProducts = () => {
+    setProductsOpen(!productsOpen);
+  };
+
+  const [solutionsOpen, setSolutionsOpen]= useState(false);
+  const toggleSolutions = () => {
+    setSolutionsOpen(!solutionsOpen);
+  };
+
+  const [resourcesOpen, setResourcesOpen]= useState(false);
+  const toggleResources = () => {
+    setResourcesOpen(!resourcesOpen);
+  };
+
+  const [contactsOpen, setContactsOpen]= useState(false);
+  const toggleContacts = () => {
+    setContactsOpen(!contactsOpen);
   };
   return (
     <div>
@@ -29,10 +47,10 @@ const Navbar = () => {
       </div>
 
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
-        <li>Product</li>
+        <Products/>
         <Solutions/>
-        <li>Pricing</li>
-        <li>Resources</li>
+        <Link to="pricing">Pricing</Link>
+        <Resources/>
         <Contact />
       </ul>
       
@@ -44,7 +62,7 @@ const Navbar = () => {
 
       <div className="hidden lg:block lg:flex lg:gap-x-8 lg:justify-center">
         <a className="text-md my-auto font-medium">Sign In</a>
-        <Button/>
+        <Button text="Get Started" width="32"/>
       </div>
     </div>
 
@@ -53,14 +71,14 @@ const Navbar = () => {
       {isOpen &&(
         <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
 
-          <button className="flex  justify-between border-b-2 pb-3" onClick={toggleDrop}> <Products/>{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> } </button>
-          <button className="flex justify-between border-b-2 pb-3" onClick={toggleDrop}>Solutions{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> }</button>
-          <button className="flex justify-between border-b-2 pb-3" onClick={toggleDrop}>Resources{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> }</button>
+          <button className="flex  justify-between border-b-2 pb-3" onClick={toggleProducts}> Products{!productsOpen && <RiArrowDropDownLine size={30}/>} {productsOpen && <RiArrowDropUpLine size={30}/> } </button>
+          <button className="flex justify-between border-b-2 pb-3" onClick={toggleSolutions}>Solutions{!solutionsOpen && <RiArrowDropDownLine size={30}/>} {solutionsOpen && <RiArrowDropUpLine size={30}/> }</button>
+          <button className="flex justify-between border-b-2 pb-3" onClick={toggleResources}>Resources{!resourcesOpen && <RiArrowDropDownLine size={30}/>} {resourcesOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Pricing</button>
-          <button className="flex justify-between border-b-2 pb-3" onClick={toggleDrop}>Contacts{!dropOpen && <RiArrowDropDownLine size={30}/>} {dropOpen && <RiArrowDropUpLine size={30}/> }</button>
+          <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Sign In</button>
 
-          <div className="mx-auto">  <Button/></div>
+          <div className="">  <Button text="Get Started" width="80"/></div>
           
         </div>
       )}

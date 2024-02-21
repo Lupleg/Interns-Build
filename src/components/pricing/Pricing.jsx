@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from '../Navbar'
+import Footer from '../Footer'
 
 const Pricing = () => {
   return (
     <div>
-      Pricing
+        <Navbar/>
+
+
+
+        <Footer/>
     </div>
   )
 }

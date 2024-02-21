@@ -1,15 +1,21 @@
-import Feature from "./components/features/Feature";
-import Header from "./components/features/Header";
-import Navbar from "./components/Navbar";
-import NotAnd from "./components/features/NotAnd";
+
+import ProductOverview from './components/productOverview/ProductOverview'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import Pricing from './components/pricing/Pricing';
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Header />
-      <Feature />
-      <NotAnd/>
+      
+      <BrowserRouter>
+        <Routes>
+           <Route path="/" element={<LandingPage/>}/>
+           <Route path="product" element={<ProductOverview/>} />
+           <Route path="/pricing" element={<Pricing/>}/>
+        </Routes>
+      </BrowserRouter>    
+      
     </div>
   );
 }
