@@ -15,9 +15,9 @@ const productOverview = () => {
     <div>
       <Navbar/>
       <ProductHeader/>
+      <Informative text="In comes Front. Wow every customer with fast, accurate, and human responses."/>
       <IntegratedApps/>
       <ExploreCapabilities/>
-      <Informative text="In comes Front. Wow every customer with fast, accurate, and human responses."/>
       <Slider/>
       <CardCrousel/>
       <Informative text="Streamline your customer communication with Front"/>

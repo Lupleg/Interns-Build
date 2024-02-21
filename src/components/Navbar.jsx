@@ -7,6 +7,7 @@ import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -48,7 +49,7 @@ const Navbar = () => {
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
         <Products/>
         <Solutions/>
-        <li>Pricing</li>
+        <Link to="pricing">Pricing</Link>
         <Resources/>
         <Contact />
       </ul>
