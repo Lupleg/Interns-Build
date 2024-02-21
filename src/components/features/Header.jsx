@@ -1,5 +1,5 @@
-import React from 'react'
-import Button from '../Button'
+import React from "react";
+import Button from "../Button";
 
 const Header = () => {
   return (
@@ -11,10 +11,13 @@ const Header = () => {
         </div>
 
       <div className="md:w-4/5 mx-auto">
-        <video src="https://front.com/assets/pages/homepage-winter2022/videos/product-overview.mp4" autoPlay></video>
+        <video
+          src="https://front.com/assets/pages/homepage-winter2022/videos/product-overview.mp4"
+          autoPlay
+        ></video>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Header

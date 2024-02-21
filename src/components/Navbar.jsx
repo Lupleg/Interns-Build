@@ -4,7 +4,8 @@ import { Twirl as Hamburger } from "hamburger-react";
 import Button from "./Button";
 import Contact from "./nav/Contact";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
-import Products from "./nav/Products";
+import Solutions from "./nav/Solutions";
+
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -28,8 +29,8 @@ const Navbar = () => {
       </div>
 
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
-        <Products/>
-        <li>Solutions</li>
+        <li>Product</li>
+        <Solutions/>
         <li>Pricing</li>
         <li>Resources</li>
         <Contact />
