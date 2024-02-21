@@ -2,8 +2,8 @@ import React from 'react'
 
 const EmailForm = () => {
   return (
-    <div>
-        <form className='lg:ml-52 lg:mr-56 py-8 mt-8 md:ml-40 md:mr-44 ml-20 mr-24' >
+    <div className='lg:ml-52 lg:mr-52 py-8 mt-8 md:ml-40 md:mr-44 ml-20 mr-24'>
+        <form className='w-5/6' >
           <div className='text-2xl font-medium pb-4'>Contact us</div>
           <fieldset className='space-y-4 font-normal'>
             <div className='flex flex-col'>
@@ -36,7 +36,7 @@ const EmailForm = () => {
             </div>
           </fieldset>
           <div className='text-center mt-20'>
-            <button className='p-1.5 bg-gray-200 rounded-3xl w-20 h-9'>Submit</button>
+            <button className='p-1.5 bg-gray-200 rounded-3xl w-20 h-9 text-white-200'>Submit</button>
           </div>
         </form>
     </div>
