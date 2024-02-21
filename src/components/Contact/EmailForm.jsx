@@ -2,7 +2,7 @@ import React from 'react'
 
 const EmailForm = () => {
   return (
-    <div>
+    <div className='w-4/5 mx-auto'>
         <form className='lg:ml-52 lg:mr-56 py-8 mt-8 md:ml-40 md:mr-44 ml-20 mr-24' >
           <div className='text-2xl font-medium pb-4'>Contact us</div>
           <fieldset className='space-y-4 font-normal'>
