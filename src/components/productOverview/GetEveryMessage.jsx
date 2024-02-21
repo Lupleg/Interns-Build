@@ -1,6 +1,6 @@
 import React from "react";
 
-const GetEveryMessage = () => {
+const GetEveryMessage = ({ heading }) => {
   const list_items = [
     {
       p: "Centralize your channels",
@@ -23,28 +23,17 @@ const GetEveryMessage = () => {
     <div>
       <div className="">
         <div className="">
-          <h2 className="">
-            Get every message into the right hands without manual work
-          </h2>
+          <h2 className="">{heading}</h2>
         </div>
         <div className="">
-          <video
-            loop=""
-            autoplay=""
-            playsinline=""
-            className=""
-            muted=""
-          >
+          <video loop="" autoplay="" playsinline="" className="hidden" muted="">
             <source src="https://front.com/assets/features/centralize-animated.mp4" />
           </video>
         </div>
         <div className="">
           <ol className="">
             {list_items.map((item, index) => (
-              <li
-                data-expanded={index === 0 ? "true" : "false"}
-                className=""
-              >
+              <li data-expanded={index === 0 ? "true" : "false"} className="">
                 <p>{item.p}</p>
                 <div>{item.div}</div>
               </li>
