@@ -1,41 +1,80 @@
 import React from "react";
+import { useState } from "react";
 
 const GetEveryMessage = ({ heading }) => {
   const list_items = [
     {
       p: "Centralize your channels",
       div: "Goodbye, tab juggling. Funnel all of your inbound messages from email, social media, SMS, voice, and more into a single place.",
+      vid: "https://front.com/assets/features/centralize-animated.mp4",
     },
     {
       p: "Route messages automatically",
       div: "Get messages to the right person by setting rules based on message content (like keywords) or data from other systems (like account info from Salesforce). No forwarding or distribution lists necessary.",
+      image:
+        "https://front.com/_next/image?url=https%3A%2F%2Ffront.com%2Fassets%2Ffeatures%2Froute-messages-automatically.jpg&w=1920&q=75",
     },
     {
       p: "Assign clear ownership",
       div: "There’s no question about who’s responsible for following up when messages are automatically assigned to individual owners based on availability, expertise, or workload.",
+      image:
+        "https://front.com/_next/image?url=https%3A%2F%2Ffront.com%2Fassets%2Ffeatures%2Fassign-clear-ownership.jpg&w=1920&q=75",
     },
     {
       p: "Let tags do the work",
       div: "Label messages with tags for pulling reports, quick visual cues, powering rules, or filtering searches.",
+      image:
+        "https://front.com/_next/image?url=https%3A%2F%2Ffront.com%2Fassets%2Ffeatures%2Flet-tags-do-the-work.jpg&w=1920&q=75",
     },
   ];
+
+  const [expanded, setExpanded] = useState(0);
+  const [vid, setVid] = useState(list_items[0].vid);
+  const [image, setImage] = useState(list_items[0].image);
+  const handleExpand = (index, vid, image) => {
+    setExpanded(index);
+    setVid(vid);
+    setImage(image);
+  };
+
   return (
-    <div>
-      <div className="">
-        <div className="">
-          <h2 className="">{heading}</h2>
+    <div className="block m-20">
+      <div className="grid grid-flow-col grid-cols-12 gap-x-5 text-[rgb(0,27,56)]">
+        <div className="flex flex-col mb-[60px] ml-auto mr-auto col-start-3 col-end-[-3] row-start-1 row-end-auto gap-[1.875rem] text-center max-w-[58rem]">
+          <h2 className="text-[2rem]/[2.375rem] font-semibold tracking-[-0.01em] m-0 block ms-0">
+            {heading}
+          </h2>
         </div>
-        <div className="">
-          <video loop="" autoplay="" playsinline="" className="hidden" muted="">
-            <source src="https://front.com/assets/features/centralize-animated.mp4" />
-          </video>
+        <div className="mb-0 block col-start-7 col-end-[-1] self-start rounded-[10px] overflow-hidden">
+          {vid && (
+            <video className="block w-full max-w-full h-auto align-middle object-contain overflow-clip overflow-clip-margin">
+              <source src={vid} />
+            </video>
+          )}
+          {image && (
+            <img
+              className="block w-full max-w-full h-auto align-middle object-contain overflow-clip overflow-clip-margin"
+              src={image}
+            />
+          )}
         </div>
-        <div className="">
-          <ol className="">
+        <div className="block col-span-6">
+          <ol className="flex flex-col gap-[30px] list-none pr-24 my-4 mx-0">
             {list_items.map((item, index) => (
-              <li data-expanded={index === 0 ? "true" : "false"} className="">
-                <p>{item.p}</p>
-                <div>{item.div}</div>
+              <li
+                className={`list-item list-none pl-3 border-l-4 border-solid ${index === expanded ? "border-[rgb(0,27,56)]" : "border-transparent"}`}
+              >
+                <p
+                  className="block text-[1.5rem]/[2.125rem] font-semibold cursor-pointer my-4 mx-0"
+                  onClick={() => handleExpand(index, item.vid, item.image)}
+                >
+                  {item.p}
+                </p>
+                {index === expanded && (
+                  <div className="block text-[16px]/[1.5rem] mt-[20px]">
+                    {item.div}
+                  </div>
+                )}
               </li>
             ))}
           </ol>
