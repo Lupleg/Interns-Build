@@ -17,7 +17,7 @@ const PricingCards = () => {
   };
   
   return (
-    <div className='py-10 flex flex-col justify-center align-center'>
+    <div className='py-10 flex flex-col items-center justify-center align-center'>
         <div className='md:4/6 lg:w-2/3 xl:w-6/12 mx-auto text-center'>
             <p className=' font-bold text-3xl md:text-4xl lg:text-5xl p-4'>Choose your plan to deliver exceptional service</p>
         </div>
@@ -31,8 +31,9 @@ const PricingCards = () => {
         } rounded-t-lg p-1 sm:p-3`} onClick={handleRightButtonClick}>FOR SMALLER TEAMS</button>
         </div>
 
-        <div className={`flex flex-col gap-y-8 lg:mx-auto  lg:flex-row w-4/5 mx-auto lg:gap-x-6 ${isLeftButtonClicked ? 'block' :'hidden'}`}>
-          <div className=' border-2 p-6 rounded-xl'>
+        <div className='py-8 md:py-10 lg:py-14 bg-gradient-to-b from-red-100 to-zinc-50'>
+        <div className={`flex flex-col  gap-y-8 lg:mx-auto  lg:flex-row w-4/5 mx-auto lg:gap-x-6 ${isLeftButtonClicked ? 'block' :'hidden'}`}>
+          <div className=' p-6 rounded-xl bg-white z-20 shadow-md'>
             <p className='font-semibold text-3xl'>Growth</p>
             <p className='py-1'>For teams looking to streamline support workflows and improve performance</p>
             <p className='font-semibold text-3xl mt-12'>$59 <sup className='text-lg'>USD</sup> <span className='font-normal text-sm text-gray-400'>/seat/mo</span></p>
@@ -56,7 +57,7 @@ const PricingCards = () => {
             
           </div>
 
-          <div className=' border-2 p-6 rounded-xl'>
+          <div className=' p-6 rounded-xl bg-white z-20 shadow-md'>
             <div className="flex items-center">
             <p className='font-semibold text-3xl inline-flex items-center'>Scale <span className='bg-black text-white text-xs px-2 py-1 rounded-md inline-block ml-4'>MOST POPULAR</span></p>
             </div>
@@ -83,7 +84,7 @@ const PricingCards = () => {
             
           </div>
 
-          <div className='border-2 p-6 rounded-xl'>
+          <div className=' p-6 rounded-xl bg-white z-20 shadow-md'>
             <p className='font-semibold text-3xl'>Premier</p>
             <p className='py-1'>For teams looking to streamline support workflows and improve performance</p>
             <p className='font-semibold text-3xl mt-12'>$229 <sup className='text-lg'>USD</sup> <span className='font-normal text-sm text-gray-400'>/seat/mo</span></p>
@@ -106,11 +107,17 @@ const PricingCards = () => {
             </div>
             
           </div>
-
+              
+        </div>
+              <div className='flex justify-center align-center'>
+              <p  className=' mx-auto inline-center   gap-x-2 mt-8 hidden lg:block hover:cursor-pointer text-xs font-semibold'>Compare all plans <span className=' align-middle inline-block'>  <FaArrowRight/></span></p>
+              </div>
+              
         </div>
         
-            <p  className=' mx-auto flex gap-x-2 mt-8 hidden lg:block hover:cursor-pointer text-xs font-semibold'>Compare all plans <span className='my-auto'>  <FaArrowRight/></span></p>
-          
+        
+              
+   
     </div>
   )
 }

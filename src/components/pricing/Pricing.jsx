@@ -15,6 +15,7 @@ const Pricing = () => {
         <Navbar/>
 
         <PricingCards/>
+        <PricingWorkflows/>
         
 
         <Footer/>
