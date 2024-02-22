@@ -109,7 +109,7 @@ const PricingCards = () => {
 
         </div>
         
-            <p  className=' mx-auto flex gap-x-2 mt-8 hover:cursor-pointer'>Compare all plans <span className='my-auto'>  <FaArrowRight/></span></p>
+            <p  className=' mx-auto flex gap-x-2 mt-8 hidden lg:block hover:cursor-pointer text-xs font-semibold'>Compare all plans <span className='my-auto'>  <FaArrowRight/></span></p>
           
     </div>
   )
