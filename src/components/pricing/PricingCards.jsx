@@ -1,16 +1,116 @@
 import React from 'react'
+import { useState } from 'react';
+import Button from '../Button';
+import { IoCheckmarkOutline } from "react-icons/io5";
+import { FaArrowRight} from "react-icons/fa6";
 
 const PricingCards = () => {
+  
+  const [isLeftButtonClicked, setIsLeftButtonClicked] = useState(true);
+
+  const handleLeftButtonClick = () => {
+    setIsLeftButtonClicked(true);
+  };
+
+  const handleRightButtonClick = () => {
+    setIsLeftButtonClicked(false);
+  };
+  
   return (
-    <div>
+    <div className='py-10 flex flex-col justify-center align-center'>
         <div className='md:4/6 lg:w-2/3 xl:w-6/12 mx-auto text-center'>
             <p className=' font-bold text-3xl md:text-4xl lg:text-5xl p-4'>Choose your plan to deliver exceptional service</p>
         </div>
 
-        <div className='flex gap-x-6 md:gap-x-10 justify-center align-center mt-10'>
-            <button className='border-2 text-semibold text-xs border-black bg-black text-white rounded-t-lg p-2 sm:p-3'>FOR MOST BUSINESSES</button>
-            <button className='border-2 text-semibold text-xs rounded-t-lg p-2 sm:p-3'>FOR SMALLER TEAMS</button>
+        <div className='flex gap-x-2 sm:gap-x-6 md:gap-x-10 justify-center align-center mt-10'>
+            <button className={` text-semibold text-xs ${
+          isLeftButtonClicked ? 'bg-black text-white' : 'bg-white text-black border-2'
+        } rounded-t-lg p-1 sm:p-3`} onClick={handleLeftButtonClick}>FOR MOST BUSINESSES</button>
+            <button className={` text-semibold text-xs ${
+          isLeftButtonClicked ? 'bg-white text-black border-2' : 'bg-black text-white'
+        } rounded-t-lg p-1 sm:p-3`} onClick={handleRightButtonClick}>FOR SMALLER TEAMS</button>
         </div>
+
+        <div className={`flex flex-col gap-y-8 lg:mx-auto  lg:flex-row w-4/5 mx-auto lg:gap-x-6 ${isLeftButtonClicked ? 'block' :'hidden'}`}>
+          <div className=' border-2 p-6 rounded-xl'>
+            <p className='font-semibold text-3xl'>Growth</p>
+            <p className='py-1'>For teams looking to streamline support workflows and improve performance</p>
+            <p className='font-semibold text-3xl mt-12'>$59 <sup className='text-lg'>USD</sup> <span className='font-normal text-sm text-gray-400'>/seat/mo</span></p>
+            <p className='text-gray-400 py-2 text-sm'>Billed annually, minimum 2 seats</p>
+            <Button text="Get Started" width="11/12"/>
+            <hr className='my-2'/>
+
+            <div>
+              <p className='font-bold  mt-4'>Deliver exceptional service with...</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Omnichannel shared inboxes</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Real-time collaboration features</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Up to 20 rules to automate workflows</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Analytics on team performance, customer satisfaction, SLAs and more</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span>Built-in knowledge base, live chat with chatbots, and 50+ integrations</p>
+            </div>
+            
+            <hr className='block lg:hidden my-6'/>
+            <div className=' flex block lg:hidden justify-center align-items'>
+              <p className='flex inline-flex items-center gap-x-1 font-semibold hover:cursor-pointer'>See all features <span><FaArrowRight/></span></p>
+            </div>
+            
+          </div>
+
+          <div className=' border-2 p-6 rounded-xl'>
+            <div className="flex items-center">
+            <p className='font-semibold text-3xl inline-flex items-center'>Scale <span className='bg-black text-white text-xs px-2 py-1 rounded-md inline-block ml-4'>MOST POPULAR</span></p>
+            </div>
+            
+            <p className='py-1'>For teams that need total workflow flexibility and advanced user management</p>
+            <p className='font-semibold text-3xl mt-12'>$99 <sup className='text-lg'>USD</sup> <span className='font-normal text-sm text-gray-400'>/seat/mo</span></p>
+            <p className='text-gray-400 py-2 text-sm'>Billed annually, minimum 20 seats</p>
+            <Button text="Talk to sales" width="11/12"/>
+            <hr className='my-2'/>
+
+            <div>
+              <p className='font-bold  mt-4'>Get everything in Growth, plus...</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span>Multiple workspaces for distinct teams</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> User management with SSO, SCIM provisioning, and custom permissions</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> No-code dynamic objects to connect backend systems and up to 200 rules</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Analytics by customer from your CRM</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span>Onboarding and solution design</p>
+            </div>
+
+            <hr className='block lg:hidden my-6'/>
+            <div className=' flex block lg:hidden justify-center align-items'>
+              <p className='flex inline-flex items-center gap-x-1 font-semibold hover:cursor-pointer'>See all features <span><FaArrowRight/></span></p>
+            </div>
+            
+          </div>
+
+          <div className='border-2 p-6 rounded-xl'>
+            <p className='font-semibold text-3xl'>Premier</p>
+            <p className='py-1'>For teams looking to streamline support workflows and improve performance</p>
+            <p className='font-semibold text-3xl mt-12'>$229 <sup className='text-lg'>USD</sup> <span className='font-normal text-sm text-gray-400'>/seat/mo</span></p>
+            <p className='text-gray-400 py-2 text-sm'>Billed annually, minimum 50 seats</p>
+            <Button text="Talk to sales" width="11/12"/>
+            <hr className='my-2'/>
+
+            <div>
+              <p className='font-bold  mt-4'>Everything in Scale and...</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Highest usage caps across all features</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Additional success services including Premier Onboarding</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Custom Build Hours including API advisory and integration development</p>
+              <p className='flex align-center mt-4 gap-x-3 '><span className='my-auto'><IoCheckmarkOutline color='gray-400'/></span> Video conferencing support</p>
+              {/* <p className='flex align-center mt-4 gap-x-3 border-2 '><IoCheckmarkOutline color='gray-400' className='my-auto'/>Built-in knowledge base, live chat with chatbots, and 50+ integrations</p> */}
+            </div>
+
+            <hr className='block lg:hidden my-6'/>
+            <div className=' flex block lg:hidden justify-center align-items'>
+              <p className='flex inline-flex items-center gap-x-1 font-semibold hover:cursor-pointer '>See all features <span><FaArrowRight/></span></p>
+            </div>
+            
+          </div>
+
+        </div>
+        
+            <p  className=' mx-auto flex gap-x-2 mt-8 hover:cursor-pointer'>Compare all plans <span className='my-auto'>  <FaArrowRight/></span></p>
+          
     </div>
   )
 }

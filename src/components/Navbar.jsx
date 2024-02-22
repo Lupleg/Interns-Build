@@ -78,7 +78,7 @@ const Navbar = () => {
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Sign In</button>
 
-          <div className="">  <Button text="Get Started" width="80"/></div>
+          <div className="">  <Button text="Get Started" width="full"/></div>
           
         </div>
       )}
