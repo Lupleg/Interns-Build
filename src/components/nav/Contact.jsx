@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Menu = () => {
     return (
-      <div className="absolute top-7 left-0 mt-0 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8 lg:w-80 md:w-60 sm:w-40 xs:w-20">
+      <div className="absolute top-9 left-0 mt-0 w-80 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 text-left py-4 px-8">
         <div
           className="py-1"
           role="menu"
@@ -13,7 +14,7 @@ const Contact = () => {
         >
           <ul rows="3">
             <li>
-              <div className="my-2 px-4 py-2 text-left text-sm text-pink-500">
+              <div className="my-2 px-4 py-2 text-left text-sm text-red-600">
                 <div>
                   <p>
                     <span className="text-left font-semibold rounded">
@@ -25,7 +26,7 @@ const Contact = () => {
             </li>
             <li>
               <button
-                className="px-4 py-2 text-left text-sm text-slate-700 hover:bg-gray-100 hover:rounded my-2"
+                className="px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:rounded my-2"
                 role="menuitem"
               >
                 <div>
@@ -47,6 +48,7 @@ const Contact = () => {
                 role="menuitem"
               >
                 <div>
+                  <Link to="contact">
                   <p>
                     <span className="text-left font-semibold rounded">
                       Email us for support
@@ -56,6 +58,7 @@ const Contact = () => {
                       to troubleshoot
                     </div>
                   </p>
+                  </Link>
                 </div>
               </button>
             </li>
@@ -71,7 +74,8 @@ const Contact = () => {
         onMouseOver={() => setIsOpen(true)}
         onMouseOut={() => setIsOpen(false)}
       >
-        <span className="font-semibold rounded">Contact Us</span>
+
+        <span className="font-semibold py-2 px-4 rounded">Contact Us</span>
         {isOpen && Menu()}
       </button>
     </li>

@@ -1,5 +1,5 @@
-import React from "react";
-import Navbar from "../Navbar";
+import React from 'react'
+import Navbar from '../Navbar'
 import IntegratedApps from "./IntegrateApps";
 import ExploreCapabilities from "./ExploreCapabilities";
 import Slider from "./Slider";
@@ -30,3 +30,4 @@ const productOverview = () => {
 };
 
 export default productOverview;
+
