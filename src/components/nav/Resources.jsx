@@ -70,7 +70,7 @@ function Resources() {
   const Column = ({ col, rb, pars }) => {
     return (
       <div
-        className={`flex flex-col space-y-1 px-4 md:w-80 bg-white ${rb ? "border-r border-gray-200 pr-4" : ""}`}
+        className={`flex flex-col px-4 md:w-80 bg-white ${rb ? "border-r border-gray-200 pr-4" : ""}`}
       >
         <p className="p-2 font-bold text-xs text-pink-500">{col}</p>
         <ul>
