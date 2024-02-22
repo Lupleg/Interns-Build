@@ -7,24 +7,26 @@ import Informative from "./Informative";
 import CardCrousel from "./CardCrousel";
 import Footer from "../Footer";
 import ProductHeader from "./ProductHeader";
-import GetEveryMessage from "./GetEveryMessage";
+import Pitch from "./Pitch";
+import { pitchOne, pitchTwo, pitchThree } from "./pitchItems";
 
 const productOverview = () => {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <ProductHeader /> */}
-      {/* <Informative text="In comes Front. Wow every customer with fast, accurate, and human responses." /> */}
-      <GetEveryMessage heading="Get every message into the right hands without manual work" />
-      {/* <IntegratedApps /> */}
-      {/* <ExploreCapabilities /> */}
-      {/* <Slider /> */}
-      {/* <CardCrousel /> */}
-      {/* <Informative text="Streamline your customer communication with Front" /> */}
-      {/* <Footer /> */}
+      <Navbar />
+      <ProductHeader />
+      <Informative text="In comes Front. Wow every customer with fast, accurate, and human responses." />
+      <Pitch pitchItem={pitchOne} />
+      <Pitch pitchItem={pitchTwo} />
+      <Pitch pitchItem={pitchThree} />
+      <IntegratedApps />
+      <ExploreCapabilities />
+      <Slider />
+      <CardCrousel />
+      <Informative text="Streamline your customer communication with Front" />
+      <Footer />
     </div>
   );
 };
 
 export default productOverview;
-
