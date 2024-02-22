@@ -4,6 +4,15 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".overflow-clip-margin": {
+          overflowClipMargin: "content-box",
+        },
+      };
 
+      addUtilities(newUtilities);
+    },
+  ],
+};
