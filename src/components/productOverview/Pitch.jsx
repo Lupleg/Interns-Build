@@ -12,7 +12,7 @@ const Pitch = ({ pitchItem }) => {
   };
 
   return (
-    <div className="block m-20">
+    <div className="block m-20 md:w-4/5 mx-auto">
       <div className="grid grid-flow-col grid-cols-12 gap-x-5 text-[rgb(0,27,56)]">
         <div className="flex flex-col mb-[60px] ml-auto mr-auto col-start-3 col-end-[-3] row-start-1 row-end-auto gap-[1.875rem] text-center max-w-[58rem]">
           <h2 className="text-[2rem]/[2.375rem] font-semibold tracking-[-0.01em] m-0 block ms-0">
