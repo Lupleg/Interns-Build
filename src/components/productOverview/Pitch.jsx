@@ -16,6 +16,7 @@ const Pitch = ({ pitchItem }) => {
       <div className="text-[rgb(0,27,56)] md:grid md:grid-flow-col md:grid-cols-12 md:gap-x-5">
         <div className="mb-[30px] max-w-[58rem] text-center md:col-start-3 md:col-end-[-3] md:row-start-1 md:row-end-auto md:mb-[60px] md:ml-auto md:mr-auto md:flex md:flex-col md:gap-[1.875rem]">
           <h2 className="text-[1.5rem]/[1.875rem] font-semibold tracking-[-0.01em] md:m-0 md:ms-0 md:text-[2rem]/[2.375rem]">
+
             {pitchItem.heading}
           </h2>
         </div>

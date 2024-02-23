@@ -38,7 +38,7 @@ const Navbar = () => {
   };
   return (
 
-    <div className="sticky top-0 bg-white z-50">
+    <div className="sticky top-0 bg-white z-50 shadow-md">
 
     <div className="flex justify-between  w-4/5 md:w-11/12 lg:w-4/5 md:mx-auto mx-auto">
       <div className="flex gap-x-2 justify-center items-center ">
