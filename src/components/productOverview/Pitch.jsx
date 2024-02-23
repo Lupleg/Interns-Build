@@ -21,7 +21,12 @@ const Pitch = ({ pitchItem }) => {
         </div>
         <div className="mb-0 block col-start-7 col-end-[-1] self-start rounded-[10px] overflow-hidden">
           {vid && (
-            <video className="block w-full max-w-full h-auto align-middle object-contain overflow-clip overflow-clip-margin">
+            <video
+              autoPlay={true}
+              muted={true}
+              loop={true}
+              className="block w-full max-w-full h-auto align-middle object-contain overflow-clip overflow-clip-margin"
+            >
               <source src={vid} />
             </video>
           )}
