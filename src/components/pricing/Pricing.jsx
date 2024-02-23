@@ -12,9 +12,8 @@ const Pricing = () => {
   return (
     <div>
         <Navbar/>
-        <Connect/>
-
         <PricingCards/>
+        <Connect/>
         <PricingWorkflows/>
         <div className='w-full py-20 mx-auto bg-gradient-to-b from-neutral-50 via-red-200 to-cyan-100 flex flex-col gap-y-2 lg:gap-y-20'>
             <Slider/>
