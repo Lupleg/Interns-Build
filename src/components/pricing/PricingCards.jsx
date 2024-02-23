@@ -155,6 +155,8 @@ const PricingCards = () => {
               <p className='font-semibold text-lg sm:text-2xl'>Compare plans and all features</p>
               <button className='p-3 px-8 border-2 rounded-full mt-6 bg-sky-600 font-semibold text-white'><a href="/public/assets/Front-Pricing-One-Pager-2023-03-06.pdf" target='_blank' rel="noopener noreferrer"> Download PDF</a></button>
         </div>
+
+        
     </div>
   )
 }
