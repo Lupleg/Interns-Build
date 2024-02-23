@@ -10,6 +10,7 @@ import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
 
 
+
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const toggleMenu = () => {
@@ -36,7 +37,9 @@ const Navbar = () => {
     setContactsOpen(!contactsOpen);
   };
   return (
-    <div>
+
+    <div className="sticky top-0 bg-white z-50 shadow-md">
+
     <div className="flex justify-between  w-4/5 md:w-11/12 lg:w-4/5 md:mx-auto mx-auto">
       <div className="flex gap-x-2 justify-center items-center ">
         <img
@@ -49,6 +52,7 @@ const Navbar = () => {
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
         <Products/>
         <Solutions/>
+
         <Link to="pricing">Pricing</Link>
         <Resources/>
         <Contact />
@@ -77,8 +81,8 @@ const Navbar = () => {
           <button className="flex justify-between border-b-2 pb-3">Pricing</button>
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Sign In</button>
+          <div className="">  <Button text="Get Started" width="full"/></div>
 
-          <div className="">  <Button text="Get Started" width="80"/></div>
           
         </div>
       )}
