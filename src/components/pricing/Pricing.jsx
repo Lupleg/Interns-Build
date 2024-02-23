@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
+import Connect from './Connect'
 import PricingCards from "./PricingCards"
 import PricingWorkflows from "./PricingWorkflows"
 import Slider from '../productOverview/Slider'
@@ -8,13 +9,10 @@ import Informative from '../productOverview/Informative'
 
 const Pricing = () => {
 
-
- 
-
-
   return (
     <div>
         <Navbar/>
+        <Connect/>
 
         <PricingCards/>
         <PricingWorkflows/>
@@ -25,9 +23,6 @@ const Pricing = () => {
             </div>
             
         </div>
-        
-        
-
         <Footer/>
     </div>
   )
