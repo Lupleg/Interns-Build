@@ -1,9 +1,13 @@
 import React from 'react'
+import ContactNav from './ContactNav'
+import ContactFooter from './ContactFooter'
 
 const EmailForm = () => {
   return (
-    <div className='lg:ml-52 lg:mr-52 py-8 mt-8 md:ml-40 md:mr-44 ml-20 mr-24'>
-        <form className='w-5/6' >
+    <>
+    <ContactNav />
+    <div className='w-4/5 mx-auto'>
+        <form className='lg:ml-52 lg:mr-56 py-8 mt-8 md:ml-40 md:mr-44 ml-20 mr-24' >
           <div className='text-2xl font-medium pb-4'>Contact us</div>
           <fieldset className='space-y-4 font-normal'>
             <div className='flex flex-col'>
@@ -40,6 +44,8 @@ const EmailForm = () => {
           </div>
         </form>
     </div>
+    <ContactFooter />
+    </>
   )
 }
 
