@@ -1,32 +1,30 @@
-import { RiArrowDropDownFill} from "react-icons/ri";
+import React from "react";
+import { RiArrowDropDownFill } from "react-icons/ri";
 
 const RequestDemo = () => {
   return (
     <div className='md:flex md:flex-col-2'>
-      <div className='py-6 bg-gradient-to-bl from-orange-300 to-orange-200 text-black h-screen'>
-        <div className='max-w-3xl ml-44 mr-14'>
-          <p className='text-2xl mt-8'>
-            "Forget about ticketing <br />
-            platforms and conventional <br /> email!
-            <strong>
-              There is so much <br /> potential with Front.
-            </strong>
+      <div className='py-2 bg-gradient-to-bl from-orange-300 to-orange-200 md:w-3/6 text-black md:pl-20'>
+        <div className='w-11/12 mx-auto'>
+          <p className='text-lg md:text-4xl my-6 text-left md:pr-16 tracking-wide font-normal'>
+            "Forget about ticketing platforms and conventional email!{" "}
+            <strong>There is so much potential with Front.</strong>
           </p>
-          <div className='flex items-center pt-6'>
+          <div className='flex items-center pt-3 pr-3'>
             <img
-              className='rounded-full mr-4'
+              className='rounded-full mr-4 w-14'
               src='https://front.com/_next/image?url=https%3A%2F%2Ffront.com%2Fassets%2Fauthors%2Flaura-ene.png&w=64&q=75'
               alt=''
             />
-            <span className='inline-block mr-14'>
+            <span className='inline-block'>
               <h2 className='text-base font-semibold'>Laura Ene</h2>
               <p className='text-sm'>Customer Success Team Lead at Hootsuite</p>
             </span>
           </div>
-          <p className='pt-12 font-semibold'>
+          <p className='pt-8 hidden md:block font-semibold'>
             Join the 8,500+ companies relying on Front
           </p>
-          <div className='flex flex-col flex-wrap'>
+          <div className='hidden md:flex md:flex-col md:flex-wrap'>
             <div className='flex'>
               <img
                 className='h-28 w-28 pr-3'
@@ -67,9 +65,11 @@ const RequestDemo = () => {
             </div>
           </div>
 
-          <p className='font-semibold pb-4 pt-5'>And we don't let them down</p>
+          <p className='font-semibold pb-4 pt-5 hidden md:block'>
+            And we don't let them down
+          </p>
 
-          <div className='flex pt-4'>
+          <div className='md:flex pt-4 hidden'>
             <img
               className='h-28 w-28'
               src='https://front.com/assets/award-badges/Momentum-Leader-Winter-2024.svg'
@@ -98,13 +98,13 @@ const RequestDemo = () => {
       </div>
 
       <div className='py-12'>
-        <div className='md:flex md:flex-col items-center pl-58'>
+        <div className='md:flex md:flex-col items-center pl-58 text-center'>
           <h2 className='font-semibold text-lg pb-3'>Get started</h2>
           <p className='text-3xl font-bold'>Tell us a bit about you</p>
         </div>
 
-        <div className='max-w-4xl mx-auto mt-10 ml-36'>
-          <form action="#">
+        <div className='w-4/5 mx-auto mt-2 md:w-full md:ml-16'>
+          <form action='#'>
             <div className='md:grid md:grid-cols-1 md:gap-4 pt-3'>
               <div>
                 <label
@@ -228,8 +228,12 @@ const RequestDemo = () => {
                     <option value='Technology'>Technology</option>
                     <option value='Logistics'>Logistics</option>
                     <option value='Manufacturing'>Manufacturing</option>
-                    <option value='Professional services'>Professional services</option>
-                    <option value='Travel & Hospitality'>Travel & Hospitality</option>
+                    <option value='Professional services'>
+                      Professional services
+                    </option>
+                    <option value='Travel & Hospitality'>
+                      Travel & Hospitality
+                    </option>
                     <option value='Health Care'>Health Care</option>
                     <option value='Non-profit'>Non-profit</option>
                     <option value='Education'>Education</option>
@@ -260,7 +264,7 @@ const RequestDemo = () => {
                 </div>
               </div>
             </div>
-            <div className='mt-3'>
+            <div className='mt-3 md:text-left'>
               <button
                 type='submit'
                 className='inline-flex items-center px-6 py-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-950 hover:bg-gradient-to-r from-red-950 to-blue-950'
