@@ -52,7 +52,7 @@ function Features() {
               Features by plan
             </h3>
 
-            <div className="max-w-full overflow-x-auto sticky top-32 bg-white ">
+            <div className="max-w-full overflow-x-auto sticky top-20 bg-white ">
               <table className="w-full table-auto">
                 <tbody>
                   <tr>

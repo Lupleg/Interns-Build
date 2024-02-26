@@ -13,7 +13,9 @@ const Header = () => {
       <div className="md:w-4/5 mx-auto">
         <video
           src="https://front.com/assets/pages/homepage-winter2022/videos/product-overview.mp4"
-          autoPlay
+          autoPlay={true}
+          loop="true"
+          muted="true"
         ></video>
       </div>
     </div>

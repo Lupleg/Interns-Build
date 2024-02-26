@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage";
 import Pricing from "./components/pricing/Pricing";
 import EmailForm from "./components/Contact/EmailForm";
 
+
 function App() {
   return (
     <div>
@@ -18,5 +19,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
