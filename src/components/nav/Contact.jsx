@@ -74,8 +74,8 @@ const Contact = () => {
         onMouseOver={() => setIsOpen(true)}
         onMouseOut={() => setIsOpen(false)}
       >
+
         <span className="font-semibold py-2 px-4 rounded">Contact Us</span>
-        
         {isOpen && Menu()}
       </button>
     </li>
