@@ -6,7 +6,7 @@ const EmailForm = () => {
   return (
     <>
     <ContactNav />
-    <div className=' w-11/12 mx-auto'>
+    <div className=' w-11/12 mx-auto mt-10'>
         <form className='mx-auto w-11/12 sm:w-3/5 sm:w-4/5' >
           <div className='text-2xl font-medium pb-4'>Contact us</div>
           <fieldset className='space-y-4 font-normal'>
