@@ -1,6 +1,7 @@
 import Productprops from "./Productprops";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+// import ProductItem from "./ProductItem";
 
 function Products() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ function Products() {
   };
   const ProductItem = () => {
     return (
-      <div className="App md:flex p-5   w-3/4 mx-auto absolute top-16  left-10 bg-white drop-shadow-md rounded-lg  ">
+      <div className=" md:flex p-5   w-3/4 mx-auto absolute top-16  left-10 bg-white drop-shadow-md rounded-lg  ">
         {/* here */}
         {/* <button className='border-2'>Click</button> */}
 
@@ -72,6 +73,7 @@ function Products() {
     );
   };
   
+ 
 
   
   return (

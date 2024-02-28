@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const ProductItem = () => {
   return (
-    <div className="App mx-auto   bg-white  rounded-lg  border-  w-full mt- text-left mr- ">
+    <div className=" mx-auto   bg-white  rounded-lg  border-  w-full mt- text-left mr- ">
       {/* here */}
       {/* <button className='border-2'>Click</button> */}
 

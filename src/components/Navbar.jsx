@@ -8,6 +8,7 @@ import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
+import ProductItem from "./nav/ProductItem";
 
 
 
@@ -15,6 +16,12 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
+    if (!isOpen) {
+      setProductsOpen(false);
+      setSolutionsOpen(false);
+      setResourcesOpen(false);
+      setContactsOpen(false);
+    }
   };
 
   const [productsOpen, setProductsOpen] = useState(false);
@@ -60,7 +67,7 @@ const Navbar = () => {
       </ul>
       
       <div className="lg:hidden">
-        <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
+        <Hamburger toggled={isOpen} toggle={toggleMenu} size={30} />
       </div>
 
       
@@ -76,7 +83,8 @@ const Navbar = () => {
       {isOpen &&(
         <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
 
-          <button className="flex  justify-between border-b-2 pb-3" onClick={toggleProducts}> Products{!productsOpen && <RiArrowDropDownLine size={30}/>} {productsOpen && <RiArrowDropUpLine size={30}/> } </button>
+          <button className="flex  justify-between border-b-2 pb-3" onClick={toggleProducts}>Products {!productsOpen && <RiArrowDropDownLine size={30}/>} {productsOpen && <RiArrowDropUpLine size={30}/> } </button>
+          {productsOpen && <ProductItem/>}
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleSolutions}>Solutions{!solutionsOpen && <RiArrowDropDownLine size={30}/>} {solutionsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleResources}>Resources{!resourcesOpen && <RiArrowDropDownLine size={30}/>} {resourcesOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Pricing</button>
