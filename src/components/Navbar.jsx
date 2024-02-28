@@ -8,6 +8,7 @@ import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
+import SolutionItem from "./nav/SolutionItem";
 
 
 
@@ -76,7 +77,8 @@ const Navbar = () => {
         <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
 
           <button className="flex  justify-between border-b-2 pb-3" onClick={toggleProducts}> Products{!productsOpen && <RiArrowDropDownLine size={30}/>} {productsOpen && <RiArrowDropUpLine size={30}/> } </button>
-          <button className="flex justify-between border-b-2 pb-3" onClick={toggleSolutions}>Solutions{!solutionsOpen && <RiArrowDropDownLine size={30}/>} {solutionsOpen && <RiArrowDropUpLine size={30}/> }</button>
+          <button className="flex justify-between border-b-2 pb-3" onClick={toggleSolutions}> Solutions{!solutionsOpen && <RiArrowDropDownLine size={30}/>} {solutionsOpen && <RiArrowDropUpLine size={30}/> }</button>
+          {solutionsOpen && <SolutionItem/>}
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleResources}>Resources{!resourcesOpen && <RiArrowDropDownLine size={30}/>} {resourcesOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Pricing</button>
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
