@@ -20,7 +20,7 @@ function Products() {
             WHAT IS FRONT?
           </p>
           <div className="md:grid md:grid-rows-2 ">
-            <Link to="product">
+            <Link to="./product">
               <Productprops
                 heading="Product Overview"
                 content="Learn how front helps build stronger customer relationship and operastion efficency"
