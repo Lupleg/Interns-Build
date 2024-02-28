@@ -8,7 +8,8 @@ import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
-import ContactMenuMobile from "./nav/ContactMenu";
+import ContactMenu from "./nav/ContactMenu";
+import ResourceMenu from "./nav/ResourceMenu";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -98,6 +99,7 @@ const Navbar = () => {
               Resources{!resourcesOpen && <RiArrowDropDownLine size={30} />}{" "}
               {resourcesOpen && <RiArrowDropUpLine size={30} />}
             </button>
+            {resourcesOpen && <ResourceMenu />}
             <button className="flex justify-between border-b-2 pb-3">
               Pricing
             </button>
@@ -108,7 +110,7 @@ const Navbar = () => {
               Contact Us{!contactsOpen && <RiArrowDropDownLine size={30} />}{" "}
               {contactsOpen && <RiArrowDropUpLine size={30} />}
             </button>
-            {contactsOpen && <ContactMenuMobile />}
+            {contactsOpen && <ContactMenu />}
             <button className="flex justify-between border-b-2 pb-3">
               Sign In
             </button>
