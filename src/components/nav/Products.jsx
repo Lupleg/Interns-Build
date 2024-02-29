@@ -11,7 +11,7 @@ function Products() {
   };
   const ProductItem = () => {
     return (
-      <div className=" md:flex p-5   w-3/4 mx-auto absolute top-16  left-10 bg-white drop-shadow-md rounded-lg  ">
+      <div className=" md:flex p-5   w-3/4 mx-auto absolute top-20  left-10 bg-white drop-shadow-md rounded-lg  ">
         {/* here */}
         {/* <button className='border-2'>Click</button> */}
 
@@ -72,18 +72,15 @@ function Products() {
       </div>
     );
   };
-  
- 
 
-  
   return (
     <li
-      className="  py-4 list-none"
-      onMouseOver={ () => setIsOpen(true) }
-      onMouseOut={ () => setIsOpen(false) }
+      className="  py-6 list-none border-4 border-transparent hover:border-b-black"
+      onMouseOver={() => setIsOpen(true)}
+      onMouseOut={() => setIsOpen(false)}
     >
       <button className="text-left">
-        <span className="font-semibold py-2 px-4 mt-9 rounded  ">Products</span>
+        <span className="font-semibold py-2 px- mt-9 rounded  ">Products</span>
         {/* {ProductItem()} */}
         {isOpen && ProductItem()}
       </button>
