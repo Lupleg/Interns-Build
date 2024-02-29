@@ -13,13 +13,13 @@ const Solutions = () => {
   };
 
   return (
-    <div
+    <li
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className='cursor-pointer'
+      className='cursor-pointer py-6 border-4 border-transparent hover:border-b-black list-none'
     >
       Solutions {isHovered && <SolutionItem/>}
-    </div>
+    </li>
   );
 };
 

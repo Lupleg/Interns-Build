@@ -4,11 +4,11 @@ const SolutionItem = () => {
   return (
       <div
         className={`pt-2
-        lg:absolute lg:top-14 px-0 py-2 left-1/2 lg:transform lg:-translate-x-1/2 lg:w-3/4 bg-white lg:shadow-lg lg:rounded-md w-full`}
+        lg:absolute lg:top-20 px-0 py-2 left-1/2 lg:transform lg:-translate-x-1/2 lg:w-3/4 bg-white lg:shadow-lg lg:rounded-md w-full`}
       >
     <div>
       <div className='pt-5 flex flex-col lg:flex-row'>
-        <div className='w-full lg:w-1/2 border-r md:border-gray-300'>
+        <div className='w-full lg:w-1/2 lg:border-r lg:border-gray-300'>
           <h2 className='lg:pl-5 text-lg text-pink-600 font-semibold mb-2'>
             Industries
           </h2>
