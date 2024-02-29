@@ -29,7 +29,7 @@ const ResourceMenu = () => {
     );
   };
   return (
-    <div className="text-left lg:flex lg:p-5 w-full lg:border-4 lg:border-transparent lg:w-4/5 lg:mx-auto lg:absolute top-20 lg:right-20 bg-white lg:shadow-md lg:rounded-lg">
+    <div className="text-left lg:flex lg:p-5 w-full lg:w-4/5 lg:mx-auto lg:absolute top-20 lg:right-20 bg-white lg:shadow-md lg:rounded-lg">
       <Column
         col={resourceMenuItem.col1.title}
         rb={true}

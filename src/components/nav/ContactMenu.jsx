@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ContactMenu = () => {
   return (
-    <div className="lg:absolute left-0 mt-0 w-full lg:w-80 lg:rounded lg:shadow-lg bg-white lg:ring-1 lg:ring-black lg:ring-opacity-5 text-left py-4 lg:px-8">
+    <div className="text-left lg:flex lg:p-5 w-full lg:w-80 lg:mx-auto lg:absolute top-20 lg:right-60 bg-white lg:shadow-md lg:rounded-lg">
       <div className="py-1">
         <ul>
           <li>
