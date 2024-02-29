@@ -16,6 +16,12 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
+    if (!isOpen) {
+      setProductsOpen(false);
+      setSolutionsOpen(false);
+      setResourcesOpen(false);
+      setContactsOpen(false);
+    }
   };
 
   const [productsOpen, setProductsOpen]= useState(false);
@@ -60,7 +66,7 @@ const Navbar = () => {
       </ul>
       
       <div className="lg:hidden">
-        <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
+        <Hamburger toggled={isOpen} toggle={toggleMenu} size={30} />
       </div>
 
       
