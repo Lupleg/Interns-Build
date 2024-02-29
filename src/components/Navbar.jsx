@@ -8,8 +8,9 @@ import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
-import ContactMenu from "./nav/ContactMenu";
+import ProductItem from "./nav/ProductItem";
 import ResourceMenu from "./nav/ResourceMenu";
+import ContactMenu from "./nav/ContactMenu";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -42,24 +43,23 @@ const Navbar = () => {
   const toggleContacts = () => {
     setContactsOpen(!contactsOpen);
   };
+
   return (
     <div className="sticky top-0 bg-white z-50 shadow-md">
       <div className="flex justify-between  w-4/5 md:w-11/12 lg:w-4/5 md:mx-auto mx-auto">
-        <div className="flex gap-x-2 justify-center items-center ">
+        <Link className="flex gap-x-2 justify-center items-center " to="/">
           <img
             src="https://seeklogo.com/images/F/front-logo-5E94F18365-seeklogo.com.png"
             className="w-4 md:w-6 lg:w-8"
           ></img>
-          <Link to="/" className="text-xl md:text-2xl lg:text-4xl font-bold">
-            Front
-          </Link>
-        </div>
+          <p className="text-xl md:text-2xl lg:text-4xl font-bold">Front</p>
+        </Link>
 
-        <ul className="lg:flex lg:justify-center lg:items-center lg:gap-x-6 font-medium hidden lg:block">
+        <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
           <Products />
           <Solutions />
 
-          <Link to="/pricing">Pricing</Link>
+          <Link to="pricing">Pricing</Link>
           <Resources />
           <Contact />
         </ul>
@@ -81,10 +81,10 @@ const Navbar = () => {
               className="flex  justify-between border-b-2 pb-3"
               onClick={toggleProducts}
             >
-              {" "}
-              Products{!productsOpen && <RiArrowDropDownLine size={30} />}{" "}
+              Products {!productsOpen && <RiArrowDropDownLine size={30} />}{" "}
               {productsOpen && <RiArrowDropUpLine size={30} />}{" "}
             </button>
+            {productsOpen && <ProductItem />}
             <button
               className="flex justify-between border-b-2 pb-3"
               onClick={toggleSolutions}
@@ -107,7 +107,7 @@ const Navbar = () => {
               className="flex justify-between border-b-2 pb-3"
               onClick={toggleContacts}
             >
-              Contact Us{!contactsOpen && <RiArrowDropDownLine size={30} />}{" "}
+              Contacts{!contactsOpen && <RiArrowDropDownLine size={30} />}{" "}
               {contactsOpen && <RiArrowDropUpLine size={30} />}
             </button>
             {contactsOpen && <ContactMenu />}
