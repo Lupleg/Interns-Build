@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import ProductItem from "./nav/ProductItem";
 import ResourceMenu from "./nav/ResourceMenu";
 import ContactMenu from "./nav/ContactMenu";
+import SolutionItem from "./nav/SolutionItem";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -92,6 +93,7 @@ const Navbar = () => {
               Solutions{!solutionsOpen && <RiArrowDropDownLine size={30} />}{" "}
               {solutionsOpen && <RiArrowDropUpLine size={30} />}
             </button>
+            {solutionsOpen && <SolutionItem />}
             <button
               className="flex justify-between border-b-2 pb-3"
               onClick={toggleResources}
