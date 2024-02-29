@@ -28,7 +28,7 @@ const ProductItem = () => {
       </div>
       <div></div>
       <div className=" md:w- md:">
-        <p className="font-bold	 text-pink-500 md:text-sm text-xs ">
+        <p className="font-bold text-pink-500 md:text-sm text-xs ">
           CAPABILITIES
         </p>
         <div className="md: md: md:">

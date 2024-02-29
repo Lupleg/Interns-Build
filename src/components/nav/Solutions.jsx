@@ -16,9 +16,9 @@ const Solutions = () => {
     <li
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className='cursor-pointer py-6 border-4 border-transparent hover:border-b-black list-none'
+      className="cursor-pointer py-6 border-2 border-transparent hover:border-b-black list-none"
     >
-      Solutions {isHovered && <SolutionItem/>}
+      Solutions {isHovered && <SolutionItem />}
     </li>
   );
 };

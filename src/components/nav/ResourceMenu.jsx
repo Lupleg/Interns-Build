@@ -4,13 +4,13 @@ const ResourceMenu = () => {
   const Column = ({ col, rb, pars }) => {
     return (
       <div
-        className={`lg:flex lg:flex-col py-3 lg:px-4 lg:w-80 bg-white ${rb ? "lg:border-r lg:border-gray-200 lg:pr-4" : ""}`}
+        className={`lg:flex lg:flex-col py-3 lg:px-4 lg:w-80 bg-white ${rb ? "lg:border-r border-gray-200 lg:pr-4" : ""}`}
       >
         <p className="lg:p-2 font-bold text-xs text-pink-500">{col}</p>
         <ul>
           {pars.map((par) => (
             <li>
-              <button className="lg:flex lg:flex-col py-1 lg:p-2 hover:bg-gray-100 hover:rounded">
+              <button className="lg:flex lg:flex-col py-1 lg:p-2 lg:hover:bg-gray-100 lg:hover:rounded-lg">
                 <div>
                   <p className="text-left text-slate-700 my-2">
                     <h2 className="font-bold text-base text-left">

@@ -11,31 +11,31 @@ function Products() {
   };
   const ProductItem = () => {
     return (
-      <div className=" md:flex p-5   w-3/4 mx-auto absolute top-20  left-10 bg-white drop-shadow-md rounded-lg  ">
+      <div className="text-left lg:flex lg:p-5 w-full lg:w-4/5 lg:mx-auto lg:absolute top-20 lg:right-20 bg-white lg:shadow-md lg:rounded-lg">
         {/* here */}
         {/* <button className='border-2'>Click</button> */}
 
         <div className=" md:border-r-2 ml-4 mb-10	md:w-2/6">
-          <p className="font-bold	 text-pink-500  md:text-sm text-xs">
+          <p className="font-bold lg:px-2 text-pink-500 text-xs">
             WHAT IS FRONT?
           </p>
           <div className="md:grid md:grid-rows-2 ">
             <Link to="./product">
               <Productprops
                 heading="Product Overview"
-                content="Learn how front helps build stronger customer relationship and operastion efficency"
+                content="Learn how front helps build stronger customer relationships and operation efficiency"
               />
             </Link>
 
             <Productprops
-              heading="Front in 2-minute"
-              content="See how front keeps all responses fast,accurate,and human"
+              heading="Front in 2-min"
+              content="See how front keeps all responses fast, accurate, and human"
             />
           </div>
         </div>
         <div></div>
         <div className=" md:w-3/5 md:ml-9 ml-4">
-          <p className="font-bold	 text-pink-500 md:text-sm text-xs ">
+          <p className="font-bold lg:px-2 text-pink-500 text-xs ">
             CAPABILITIES
           </p>
           <div className="md:grid md:grid-cols-2 md:gap-x-7">
@@ -75,7 +75,7 @@ function Products() {
 
   return (
     <li
-      className="  py-6 list-none border-4 border-transparent hover:border-b-black"
+      className="  py-6 list-none border-2 border-transparent hover:border-b-black"
       onMouseOver={() => setIsOpen(true)}
       onMouseOut={() => setIsOpen(false)}
     >

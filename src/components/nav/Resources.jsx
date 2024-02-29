@@ -6,7 +6,7 @@ const Resources = () => {
 
   return (
     <li
-      className="py-6 border-4 border-transparent hover:border-b-black"
+      className="py-6 border-2 border-transparent hover:border-b-black"
       onMouseOver={() => setIsOpen(true)}
       onMouseOut={() => setIsOpen(false)}
     >
