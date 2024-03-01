@@ -81,7 +81,8 @@ const Navbar = () => {
           <Products />
           <Solutions />
 
-          <Link to="pricing">
+          <Link to="/pricing">
+
             <Pricing />
           </Link>
           <Resources />
