@@ -9,6 +9,10 @@ import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
 import ProductItem from "./nav/ProductItem";
+import ResourceMenu from "./nav/ResourceMenu";
+import ContactMenu from "./nav/ContactMenu";
+import SolutionItem from "./nav/SolutionItem";
+import Pricing from "./nav/Pricing";
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -24,21 +28,41 @@ const Navbar = () => {
 
   const [productsOpen, setProductsOpen] = useState(false);
   const toggleProducts = () => {
+    if (!productsOpen) {
+      setSolutionsOpen(false);
+      setResourcesOpen(false);
+      setContactsOpen(false);
+    }
     setProductsOpen(!productsOpen);
   };
 
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const toggleSolutions = () => {
+    if (!solutionsOpen) {
+      setProductsOpen(false);
+      setResourcesOpen(false);
+      setContactsOpen(false);
+    }
     setSolutionsOpen(!solutionsOpen);
   };
 
   const [resourcesOpen, setResourcesOpen] = useState(false);
   const toggleResources = () => {
+    if (!resourcesOpen) {
+      setProductsOpen(false);
+      setSolutionsOpen(false);
+      setContactsOpen(false);
+    }
     setResourcesOpen(!resourcesOpen);
   };
 
   const [contactsOpen, setContactsOpen] = useState(false);
   const toggleContacts = () => {
+    if (!contactsOpen) {
+      setProductsOpen(false);
+      setSolutionsOpen(false);
+      setResourcesOpen(false);
+    }
     setContactsOpen(!contactsOpen);
   };
 
@@ -57,7 +81,9 @@ const Navbar = () => {
           <Products />
           <Solutions />
 
-          <Link to="pricing">Pricing</Link>
+          <Link to="/pricing">
+            <Pricing />
+          </Link>
           <Resources />
           <Contact />
         </ul>
@@ -76,7 +102,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
             <button
-              className="flex  justify-between border-b-2 pb-3"
+              className={`flex  justify-between ${productsOpen ? "" : "border-b-2"} pb-3`}
               onClick={toggleProducts}
             >
               Products {!productsOpen && <RiArrowDropDownLine size={30} />}{" "}
@@ -84,29 +110,32 @@ const Navbar = () => {
             </button>
             {productsOpen && <ProductItem />}
             <button
-              className="flex justify-between border-b-2 pb-3"
+              className={`flex justify-between ${solutionsOpen ? "" : "border-b-2"} pb-3`}
               onClick={toggleSolutions}
             >
               Solutions{!solutionsOpen && <RiArrowDropDownLine size={30} />}{" "}
               {solutionsOpen && <RiArrowDropUpLine size={30} />}
             </button>
+            {solutionsOpen && <SolutionItem />}
             <button
-              className="flex justify-between border-b-2 pb-3"
+              className={`flex justify-between ${resourcesOpen ? "" : "border-b-2"} pb-3`}
               onClick={toggleResources}
             >
               Resources{!resourcesOpen && <RiArrowDropDownLine size={30} />}{" "}
               {resourcesOpen && <RiArrowDropUpLine size={30} />}
             </button>
+            {resourcesOpen && <ResourceMenu />}
             <button className="flex justify-between border-b-2 pb-3">
               Pricing
             </button>
             <button
-              className="flex justify-between border-b-2 pb-3"
+              className={`flex justify-between ${contactsOpen ? "" : "border-b-2"} pb-3`}
               onClick={toggleContacts}
             >
               Contacts{!contactsOpen && <RiArrowDropDownLine size={30} />}{" "}
               {contactsOpen && <RiArrowDropUpLine size={30} />}
             </button>
+            {contactsOpen && <ContactMenu />}
             <button className="flex justify-between border-b-2 pb-3">
               Sign In
             </button>

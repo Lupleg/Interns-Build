@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
 function Pricing() {
   return (
-    <div>Pricing</div>
-  )
+    <li className="py-7 border-2 border-transparent hover:border-b-black">
+      <button>
+        <div>Pricing</div>
+      </button>
+    </li>
+  );
 }
 
-export default Pricing
+export default Pricing;
+
