@@ -126,7 +126,7 @@ const Navbar = () => {
             </button>
             {resourcesOpen && <ResourceMenu />}
             <button className="flex justify-between border-b-2 pb-3">
-              Pricing
+              <Link to="/pricing">Pricing</Link>
             </button>
             <button
               className={`flex justify-between ${contactsOpen ? "" : "border-b-2"} pb-3`}
