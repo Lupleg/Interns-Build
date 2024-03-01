@@ -82,7 +82,6 @@ const Navbar = () => {
           <Solutions />
 
           <Link to="/pricing">
-
             <Pricing />
           </Link>
           <Resources />
