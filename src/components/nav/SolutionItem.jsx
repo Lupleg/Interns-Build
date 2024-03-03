@@ -6,7 +6,7 @@ const SolutionItem = () => {
       <div>
         <div className="pt-5 lg:flex lg:flex-row">
           <div className="w-full lg:w-1/2 lg:border-r lg:border-gray-300">
-            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold mb-2">
+            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold mb-6">
               INDUSTRIES
             </h2>
             <div className="lg:flex lg:flex-wrap">
@@ -80,7 +80,7 @@ const SolutionItem = () => {
           </div>
 
           <div className="w-full lg:w-1/2">
-            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold mb-2">
+            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold my-6">
               TEAMS
             </h2>
             <div className="lg:flex lg:flex-wrap">
