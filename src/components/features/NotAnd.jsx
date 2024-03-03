@@ -10,7 +10,9 @@ const NotAnd = () => {
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
             
-                <video src="https://front.com/assets/features/workload-balancing.mp4" className='rounded-2xl sm:mt-14 z-30'></video>
+                <video src="https://front.com/assets/features/workload-balancing.mp4" className='rounded-2xl sm:mt-14 z-30' autoPlay={true}
+          loop="true"
+          muted="true"></video>
             
             <div className='flex flex-col justify-center align-center sm:p-8 p-2 gap-y-2 '>
                 <p className='font-bold text-xl sm:text-2xl text-center lg:text-left lg:text-2xl'>Automation and attention</p>
@@ -18,7 +20,9 @@ const NotAnd = () => {
                 <a href='#' className='font-medium text-center lg:text-left flex mx-auto lg:mx-0'>Learn More <span className='ml-2 lg:ml-3 mt-1 lg:mt-2'><FaArrowRightLong/></span></a> 
             </div>
             
-                <video src="https://front.com/assets/features/teams-in-lockstep.mp4" className='rounded-2xl sm:mt-14 z-30'></video>
+                <video src="https://front.com/assets/features/teams-in-lockstep.mp4" className='rounded-2xl sm:mt-14 z-30' autoPlay={true}
+          loop="true"
+          muted="true"></video>
             
             <div className='flex flex-col justify-center align-center sm:p-8 p-2 gap-y-2 '>
                 <p className='font-bold text-xl sm:text-2xl text-center lg:text-left lg:text-2xl'>Speed and personalization</p>
@@ -26,7 +30,9 @@ const NotAnd = () => {
                 <a href="#" className='font-medium text-center lg:text-left flex mx-auto lg:mx-0'>Learn More <span className='ml-2 lg:ml-3 mt-1 lg:mt-2'><FaArrowRightLong/></span></a>
             </div>
             
-                <video src="https://front.com/assets/features/customer-satisfaction.mp4" className='rounded-2xl sm:mt-14 z-30'></video>
+                <video src="https://front.com/assets/features/customer-satisfaction.mp4" className='rounded-2xl sm:mt-14 z-30' autoPlay={true}
+          loop="true"
+          muted="true"></video>
             
             <div className='flex flex-col justify-center align-center sm:p-8 p-2 gap-y-2 lg:text-left'>
                 <p className='font-bold text-xl sm:text-2xl text-center lg:text-left lg:text-2xl'>Measure customer happiness and team performance</p>
