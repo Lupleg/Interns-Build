@@ -4,13 +4,13 @@ const SolutionItem = () => {
   return (
     <div className="pt-2 lg:absolute lg:top-20 px-0 py-2 left-1/2 lg:-translate-x-1/2 lg:w-3/4 bg-white lg:shadow-lg lg:rounded-md w-full">
       <div>
-        <div className="pt-5 flex flex-col lg:flex-row">
+        <div className="pt-5 lg:flex lg:flex-row">
           <div className="w-full lg:w-1/2 lg:border-r lg:border-gray-300">
-            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold mb-2">
+            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold mb-6">
               INDUSTRIES
             </h2>
-            <div className="flex flex-wrap">
-              <div className="lg:p-2 md:w-1/2">
+            <div className="lg:flex lg:flex-wrap">
+              <div className="lg:p-2 lg:w-1/2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-4 pb-3 bg-white rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Technology</a>
@@ -21,7 +21,7 @@ const SolutionItem = () => {
                 </div>
               </div>
 
-              <div className="md:w-1/2 lg:p-2">
+              <div className="lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-4 pb-3 bg-white rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Financial Services</a>
@@ -33,7 +33,7 @@ const SolutionItem = () => {
                 </div>
               </div>
 
-              <div className="md:w-1/2 lg:p-2">
+              <div className="lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-4 pb-3 bg-white rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Logistics</a>
@@ -44,7 +44,7 @@ const SolutionItem = () => {
                   </p>
                 </div>
               </div>
-              <div className="md:w-1/2 lg:p-2">
+              <div className="lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-4 pb-3 bg-white rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Manufacturing</a>
@@ -55,7 +55,7 @@ const SolutionItem = () => {
                   </p>
                 </div>
               </div>
-              <div className="md:w-1/2 lg:p-2">
+              <div className="lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-4 pb-3 bg-white rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Professional services</a>
@@ -65,7 +65,7 @@ const SolutionItem = () => {
                   </p>
                 </div>
               </div>
-              <div className="md:w-1/2 lg:p-2">
+              <div className="lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-4 pb-3 bg-white rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Travel</a>
@@ -80,11 +80,11 @@ const SolutionItem = () => {
           </div>
 
           <div className="w-full lg:w-1/2">
-            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold mb-2">
+            <h2 className="lg:pl-5 text-xs text-pink-500 font-bold my-6">
               TEAMS
             </h2>
-            <div className="flex flex-wrap">
-              <div className="w-full sm:w-1/2 md:w-1/2 lg:p-2">
+            <div className="lg:flex lg:flex-wrap">
+              <div className="w-full lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-3 bg-white pb-3 rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Customer Services and Support</a>
@@ -95,7 +95,7 @@ const SolutionItem = () => {
                 </div>
               </div>
 
-              <div className="w-full sm:w-1/2 md:w-1/2 lg:p-2">
+              <div className="w-full lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-3 bg-white pb-3 rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Operations</a>
@@ -105,7 +105,7 @@ const SolutionItem = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 lg:p-2">
+              <div className="w-full lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-3 bg-white pb-3 rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Inbound Sales</a>
@@ -115,7 +115,7 @@ const SolutionItem = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 lg:p-2">
+              <div className="w-full lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-3 bg-white pb-3 rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Account Management</a>
@@ -125,7 +125,7 @@ const SolutionItem = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-full sm:w-1/2 md:w-1/2 lg:p-2">
+              <div className="w-full lg:w-1/2 lg:p-2">
                 <div className="lg:hover:bg-gray-100 text-slate-700 lg:p-3 bg-white pb-3 rounded-lg">
                   <h2 className="text-base font-bold">
                     <a href="#">Success</a>
