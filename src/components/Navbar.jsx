@@ -8,12 +8,20 @@ import Products from "./nav/Products";
 import Solutions from "./nav/Solutions";
 import Resources from "./nav/Resources";
 import { Link } from "react-router-dom";
+import SolutionItem from "./nav/SolutionItem";
+
 
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
+    if (!isOpen) {
+      setProductsOpen(false);
+      setSolutionsOpen(false);
+      setResourcesOpen(false);
+      setContactsOpen(false);
+    }
   };
 
   const [productsOpen, setProductsOpen]= useState(false);
@@ -36,7 +44,9 @@ const Navbar = () => {
     setContactsOpen(!contactsOpen);
   };
   return (
+
     <div className="sticky top-0 bg-white z-50">
+
     <div className="flex justify-between  w-4/5 md:w-11/12 lg:w-4/5 md:mx-auto mx-auto">
       <div className="flex gap-x-2 justify-center items-center ">
         <img
@@ -49,13 +59,14 @@ const Navbar = () => {
       <ul className="lg:flex lg:justify-center lg:text-md lg:items-center lg:gap-x-6 lg:font-medium hidden lg:block">
         <Products/>
         <Solutions/>
+
         <Link to="pricing">Pricing</Link>
         <Resources/>
         <Contact />
       </ul>
       
       <div className="lg:hidden">
-        <Hamburger toggled={isOpen} toggle={setOpen} size={30} />
+        <Hamburger toggled={isOpen} toggle={toggleMenu} size={30} />
       </div>
 
       
@@ -72,13 +83,14 @@ const Navbar = () => {
         <div className="flex flex-col gap-y-8 w-full font-bold align-center justify-center">
 
           <button className="flex  justify-between border-b-2 pb-3" onClick={toggleProducts}> Products{!productsOpen && <RiArrowDropDownLine size={30}/>} {productsOpen && <RiArrowDropUpLine size={30}/> } </button>
-          <button className="flex justify-between border-b-2 pb-3" onClick={toggleSolutions}>Solutions{!solutionsOpen && <RiArrowDropDownLine size={30}/>} {solutionsOpen && <RiArrowDropUpLine size={30}/> }</button>
+          <button className="flex justify-between border-b-2 pb-3" onClick={toggleSolutions}> Solutions{!solutionsOpen && <RiArrowDropDownLine size={30}/>} {solutionsOpen && <RiArrowDropUpLine size={30}/> }</button>
+          {solutionsOpen && <SolutionItem/>}
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleResources}>Resources{!resourcesOpen && <RiArrowDropDownLine size={30}/>} {resourcesOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Pricing</button>
           <button className="flex justify-between border-b-2 pb-3" onClick={toggleContacts}>Contacts{!contactsOpen && <RiArrowDropDownLine size={30}/>} {contactsOpen && <RiArrowDropUpLine size={30}/> }</button>
           <button className="flex justify-between border-b-2 pb-3">Sign In</button>
+          <div className="">  <Button text="Get Started" width="full"/></div>
 
-          <div className="">  <Button text="Get Started" width="80"/></div>
           
         </div>
       )}
